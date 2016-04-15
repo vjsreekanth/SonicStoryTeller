@@ -20,6 +20,7 @@
 		5E8BF0B41CC19E080042A809 /* funk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E8BF0B31CC19E080042A809 /* funk.mp3 */; };
 		5E8BF0B71CC19E1D0042A809 /* tk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E8BF0B51CC19E1D0042A809 /* tk.mp3 */; };
 		5E8BF0B81CC19E1D0042A809 /* toms.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E8BF0B61CC19E1D0042A809 /* toms.mp3 */; };
+		5E8BF0BB1CC1A5710042A809 /* AudioMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BF0BA1CC1A5710042A809 /* AudioMixer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		5E8BF0B31CC19E080042A809 /* funk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = funk.mp3; path = AudioEFX/funk.mp3; sourceTree = "<group>"; };
 		5E8BF0B51CC19E1D0042A809 /* tk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tk.mp3; path = AudioEFX/tk.mp3; sourceTree = "<group>"; };
 		5E8BF0B61CC19E1D0042A809 /* toms.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = toms.mp3; path = AudioEFX/toms.mp3; sourceTree = "<group>"; };
+		5E8BF0B91CC1A5710042A809 /* AudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioMixer.h; sourceTree = "<group>"; };
+		5E8BF0BA1CC1A5710042A809 /* AudioMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioMixer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 		5E8BF0AB1CC19A7F0042A809 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5E8BF0B91CC1A5710042A809 /* AudioMixer.h */,
+				5E8BF0BA1CC1A5710042A809 /* AudioMixer.m */,
 				5E8BF0AC1CC19AA70042A809 /* BJIConverter.h */,
 				5E8BF0AD1CC19AA70042A809 /* BJIConverter.m */,
 				5E8BF0AE1CC19AA70042A809 /* PCMMixer.h */,
@@ -200,6 +205,7 @@
 				5E8BF0951CC195810042A809 /* AppDelegate.m in Sources */,
 				5E8BF0B11CC19AA70042A809 /* PCMMixer.m in Sources */,
 				5E8BF0B01CC19AA70042A809 /* BJIConverter.m in Sources */,
+				5E8BF0BB1CC1A5710042A809 /* AudioMixer.m in Sources */,
 				5E8BF0921CC195810042A809 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

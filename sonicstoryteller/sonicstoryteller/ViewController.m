@@ -2,18 +2,19 @@
 //  ViewController.m
 //  sonicstoryteller
 //
-//  Created by SREEKANTH JAGADEESAN VAZHAPPULLY on 2016-04-15.
+//  Created by SREEKANTH JAGADEESAN VAZHAPPULLY on 2016-04-14.
 //  Copyright © 2016 SREEKANTH JAGADEESAN VAZHAPPULLY. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "BJIConverter.h"
-#import "PCMMixer.h"
-#import <AVFoundation/AVAudioPlayer.h>
+#import <AVFoundation/AVFoundation.h>
+#import "AudioMixer.h"
 
 @interface ViewController ()
-
-@property (nonatomic) AVAudioPlayer *avAudio;
+{
+    AVAudioRecorder *recorder;
+    AVAudioPlayer *player;
+}
 
 @end
 
@@ -21,89 +22,94 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSArray *mp3s = [self getMP3s];
-    NSArray *cafs = [self getCAFs:mp3s];
-    //  Convert all mp3's to cafs
-    [BJIConverter convertFiles:mp3s toFiles:cafs];
     
-    NSArray *files = cafs;
-    NSArray *times = [self getTimes];
-    NSString *mixURL = [self getMixURL];
+    // Set the audio file
+    NSArray *pathComponents = [NSArray arrayWithObjects:
+                               [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject],
+                               @"recorded.caf",
+                               nil];
+    NSURL *outputFileURL = [NSURL fileURLWithPathComponents:pathComponents];
     
-    OSStatus status = [PCMMixer mixFiles:files atTimes:times toMixfile:mixURL];
+    // Setup audio session
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
     
-    [self playMix:mixURL withStatus:status];
-    [BJIConverter convertFile:mixURL toFile:[mixURL stringByReplacingOccurrencesOfString:@".caf" withString:@".aiff"]];
-}
-
-- (NSArray*)getFiles {
-    NSString *inFile = [[NSBundle mainBundle] pathForResource:@"toms.caf" ofType:nil];
-    return [NSArray arrayWithObjects:inFile,inFile,inFile,inFile, nil];
-}
-
-- (NSArray *)getTimes {
-    //  First item must be at time 0. All other sounds must be relative to this first sound.
-    return [NSArray arrayWithObjects:[NSNumber numberWithInt:0],[NSNumber numberWithInt:10],[NSNumber numberWithInt:20], nil];
-}
-
-- (NSString*)getMixURL {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    return [[paths objectAtIndex:0] stringByAppendingPathComponent:@"Mix.caf"];
-}
-
-- (void)playMix:(NSString*)mixURL withStatus:(OSStatus)status {
-    if (status == OSSTATUS_MIX_WOULD_CLIP) {
-        [self.view setBackgroundColor:[UIColor redColor]];
-    } else {
-        [self.view setBackgroundColor:[UIColor greenColor]];
-        
-        NSURL *url = [NSURL fileURLWithPath:mixURL];
-        
-        NSData *urlData = [NSData dataWithContentsOfURL:url];
-        
-        NSLog(@"wrote mix file of size %lu : %@", (unsigned long)[urlData length], mixURL);
-        
-        AVAudioPlayer *avAudioObj = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-        
-        self.avAudio = avAudioObj;
-        
-        [avAudioObj prepareToPlay];
-        [avAudioObj play];
-    }
-}
-
-- (NSArray*)getMP3s {
-    //  Find all mp3's in bundle
-    NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
-    NSFileManager *fm = [NSFileManager defaultManager];
-    NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
-    NSPredicate *fltr = [NSPredicate predicateWithFormat:@"self ENDSWITH '.mp3'"];
-    NSArray *mp3s = [dirContents filteredArrayUsingPredicate:fltr];
+    // Define the recorder setting
+    NSDictionary *recordSetting;// = [[NSMutableDictionary alloc] init];
     
-    //  Convert mp3's to their full paths
-    NSMutableArray *fullmp3s = [[NSMutableArray alloc] initWithCapacity:[mp3s count]];
-    [mp3s enumerateObjectsUsingBlock:^(NSString *file, NSUInteger idx, BOOL *stop) {
-        [fullmp3s addObject:[bundleRoot stringByAppendingPathComponent:file]];
-    }];
-    return fullmp3s;
-}
-
-- (NSArray*)getCAFs:(NSArray*)mp3s {
-    //  Find 'Documents' directory
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docPath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+    /*[recordSetting setValue:[NSNumber numberWithInt:kAudioFormatMPEG4AAC] forKey:AVFormatIDKey];
+     [recordSetting setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
+     [recordSetting setValue:[NSNumber numberWithInt: 2] forKey:AVNumberOfChannelsKey];*/
     
-    //  Create AIFFs from mp3's
-    NSMutableArray *cafs = [[NSMutableArray alloc] initWithCapacity:[mp3s count]];
-    [mp3s enumerateObjectsUsingBlock:^(NSString *file, NSUInteger idx, BOOL *stop) {
-        [cafs addObject:[docPath stringByAppendingPathComponent:[[file lastPathComponent] stringByReplacingOccurrencesOfString:@".mp3" withString:@".caf"]]];
-    }];
-    return cafs;
+    recordSetting = [NSDictionary
+                     dictionaryWithObjectsAndKeys:
+                     [NSNumber numberWithInt:AVAudioQualityMin],
+                     AVEncoderAudioQualityKey,
+                     [NSNumber numberWithInt:16],
+                     AVEncoderBitRateKey,
+                     [NSNumber numberWithInt: 2],
+                     AVNumberOfChannelsKey,
+                     [NSNumber numberWithFloat:44100.0],
+                     AVSampleRateKey,
+                     nil];
+    
+    // Initiate and prepare the recorder
+    recorder = [[AVAudioRecorder alloc] initWithURL:outputFileURL settings:recordSetting error:NULL];
+    recorder.meteringEnabled = YES;
+    [recorder prepareToRecord];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)btnRecord:(id)sender
+{
+    if (player.playing) {
+        [player stop];
+    }
+    
+    if (!recorder.recording)
+    {
+        AVAudioSession *session = [AVAudioSession sharedInstance];
+        [session setActive:YES error:nil];
+        
+        // Start recording
+        [recorder record];
+        
+        
+    }
+    else
+    {
+        
+        // Pause recording
+        [recorder pause];
+        
+    }
+}
+
+- (IBAction)btnStop:(id)sender
+{
+    [recorder stop];
+    
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    [audioSession setActive:NO error:nil];
+}
+
+- (IBAction)btnPlay:(id)sender
+{
+    if (!recorder.recording){
+        player = [[AVAudioPlayer alloc] initWithContentsOfURL:recorder.url error:nil];
+        AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+        [audioSession overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:nil];
+        player.volume = 1.0;
+        
+        [[AudioMixer sharedInstance] mixAndPlay];
+        //[player play];
+    }
+}
+
 
 @end

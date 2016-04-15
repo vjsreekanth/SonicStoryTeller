@@ -145,7 +145,7 @@ cleanup:
 
 + (BOOL)convertFiles:(NSArray*)filesIn toFiles:(NSArray*)filesOut {
   [filesIn enumerateObjectsUsingBlock:^(NSString *fileIn, NSUInteger idx, BOOL *stop) {
-    [self convertFile:fileIn toFile:[filesOut objectAtIndex:idx]];
+      [self convertFile:fileIn toFile:[filesOut objectAtIndex:idx]];
   }];
   return YES;
 }
