@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Recorder : NSObject
++ (instancetype)sharedInstance;
+-(void)record;
+-(void)playLastRecorded;
+-(void)stopRecording;
 
 @end

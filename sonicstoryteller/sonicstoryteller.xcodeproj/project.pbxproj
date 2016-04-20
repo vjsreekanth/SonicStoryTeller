@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E03CD571CC593E00038BC2A /* Recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E03CD561CC593E00038BC2A /* Recorder.m */; };
 		5E8BF0921CC195810042A809 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BF0911CC195810042A809 /* main.m */; };
 		5E8BF0951CC195810042A809 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BF0941CC195810042A809 /* AppDelegate.m */; };
 		5E8BF0981CC195810042A809 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BF0971CC195810042A809 /* ViewController.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E03CD551CC593E00038BC2A /* Recorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recorder.h; path = ../Recorder.h; sourceTree = "<group>"; };
+		5E03CD561CC593E00038BC2A /* Recorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recorder.m; path = ../Recorder.m; sourceTree = "<group>"; };
 		5E8BF08D1CC195810042A809 /* sonicstoryteller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sonicstoryteller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8BF0911CC195810042A809 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E8BF0931CC195810042A809 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 			children = (
 				5E8BF0B91CC1A5710042A809 /* AudioMixer.h */,
 				5E8BF0BA1CC1A5710042A809 /* AudioMixer.m */,
+				5E03CD551CC593E00038BC2A /* Recorder.h */,
+				5E03CD561CC593E00038BC2A /* Recorder.m */,
 				5E8BF0AC1CC19AA70042A809 /* BJIConverter.h */,
 				5E8BF0AD1CC19AA70042A809 /* BJIConverter.m */,
 				5E8BF0AE1CC19AA70042A809 /* PCMMixer.h */,
@@ -207,6 +212,7 @@
 				5E8BF0B01CC19AA70042A809 /* BJIConverter.m in Sources */,
 				5E8BF0BB1CC1A5710042A809 /* AudioMixer.m in Sources */,
 				5E8BF0921CC195810042A809 /* main.m in Sources */,
+				5E03CD571CC593E00038BC2A /* Recorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +363,7 @@
 				5E8BF0A61CC195810042A809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
