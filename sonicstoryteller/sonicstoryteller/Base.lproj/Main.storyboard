@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +17,408 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="IEL-Wf-8aJ">
+                                <rect key="frame" x="20" y="37" width="560" height="560"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzQ-ci-izh">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="280"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdC-Ln-H6V">
+                                        <rect key="frame" x="0.0" y="280" width="560" height="280"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCQ-eF-ocL">
+                                                <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="7bs-YY-oN8"/>
+                                                    <constraint firstAttribute="height" constant="50" id="M0H-AZ-oa9"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLJ-Ns-St2">
+                                                <rect key="frame" x="66" y="8" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="bRz-XA-FKi"/>
+                                                    <constraint firstAttribute="width" constant="50" id="hUF-xu-8m4"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPJ-Oq-KHt">
+                                                <rect key="frame" x="124" y="8" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="A2i-co-Jcr"/>
+                                                    <constraint firstAttribute="width" constant="50" id="Xba-kR-Qlb"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elu-0Z-cGZ">
+                                                <rect key="frame" x="182" y="8" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="5Gk-f3-mlS"/>
+                                                    <constraint firstAttribute="width" constant="50" id="zNJ-zE-Vca"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3H-aY-BUS">
+                                                <rect key="frame" x="240" y="8" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="81S-Fg-GWg"/>
+                                                    <constraint firstAttribute="height" constant="50" id="AR2-Pt-pSM"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58k-qK-FfE">
+                                                <rect key="frame" x="298" y="8" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="kHE-67-wfp"/>
+                                                    <constraint firstAttribute="width" constant="50" id="y18-r9-DOv"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-tQ-r8i">
+                                                <rect key="frame" x="356" y="8" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="bjO-l5-xBt"/>
+                                                    <constraint firstAttribute="height" constant="50" id="yrd-C9-iG6"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEd-jg-JsX">
+                                                <rect key="frame" x="414" y="8" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="5mS-N7-XgQ"/>
+                                                    <constraint firstAttribute="width" constant="50" id="BrC-22-dbD"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-lQ-4z5">
+                                                <rect key="frame" x="472" y="8" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Byk-oZ-9CE"/>
+                                                    <constraint firstAttribute="height" constant="50" id="ghh-bC-SKs"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky3-Y9-pMn">
+                                                <rect key="frame" x="8" y="66" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="bDP-b2-alA"/>
+                                                    <constraint firstAttribute="width" constant="50" id="r8y-mv-7a3"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBC-23-HZ0">
+                                                <rect key="frame" x="66" y="66" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Zf7-WB-utH"/>
+                                                    <constraint firstAttribute="height" constant="50" id="bzS-9b-O2h"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FB-IS-zzM">
+                                                <rect key="frame" x="124" y="66" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="BPO-NI-dbE"/>
+                                                    <constraint firstAttribute="width" constant="50" id="VOf-WA-h1j"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-Fx-Vs5">
+                                                <rect key="frame" x="182" y="66" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Mxz-4n-m2A"/>
+                                                    <constraint firstAttribute="width" constant="50" id="cYA-lL-8tV"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcS-Fe-EoJ">
+                                                <rect key="frame" x="240" y="66" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Cib-RH-bDR"/>
+                                                    <constraint firstAttribute="width" constant="50" id="N3K-Fb-gkA"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd7-Pi-hxO">
+                                                <rect key="frame" x="298" y="66" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Egx-fg-1XX"/>
+                                                    <constraint firstAttribute="width" constant="50" id="lSK-sk-xAj"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sr-bg-XKJ">
+                                                <rect key="frame" x="356" y="66" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="I3Z-8n-hY4"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Kf6-16-0IO"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgL-IP-iYK">
+                                                <rect key="frame" x="414" y="66" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="CDI-wm-i6c"/>
+                                                    <constraint firstAttribute="height" constant="50" id="vjz-BP-KJO"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nje-zM-eN1">
+                                                <rect key="frame" x="472" y="66" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="D1O-fP-Ssr"/>
+                                                    <constraint firstAttribute="width" constant="50" id="vVn-ZN-Vwr"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCK-BN-OcV">
+                                                <rect key="frame" x="8" y="124" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="KlA-Wb-RcE"/>
+                                                    <constraint firstAttribute="width" constant="50" id="iPf-Lj-ro0"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-E3-wf4">
+                                                <rect key="frame" x="66" y="124" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="IUw-zv-dKH"/>
+                                                    <constraint firstAttribute="height" constant="50" id="zWj-uX-vTb"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLG-pQ-Kqq">
+                                                <rect key="frame" x="124" y="124" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="E4U-Zb-RtH"/>
+                                                    <constraint firstAttribute="width" constant="50" id="Lix-ja-dF6"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvI-lz-vBZ">
+                                                <rect key="frame" x="182" y="124" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="MSY-kf-QjB"/>
+                                                    <constraint firstAttribute="width" constant="50" id="a2Z-Dj-1dI"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2u-qk-M7G">
+                                                <rect key="frame" x="240" y="124" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Xfk-k9-4IG"/>
+                                                    <constraint firstAttribute="width" constant="50" id="shm-cg-xLI"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqo-ol-1uW">
+                                                <rect key="frame" x="298" y="124" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="5Zi-jh-OzT"/>
+                                                    <constraint firstAttribute="width" constant="50" id="S8q-mN-Sph"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riO-3f-zHM">
+                                                <rect key="frame" x="356" y="124" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="3hx-rP-Pfp"/>
+                                                    <constraint firstAttribute="height" constant="50" id="mAy-oF-BvV"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPs-Wp-ADW">
+                                                <rect key="frame" x="414" y="124" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="cWs-uS-EaY"/>
+                                                    <constraint firstAttribute="width" constant="50" id="ulN-fN-ADe"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WQ-tY-1Yd">
+                                                <rect key="frame" x="472" y="124" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="E7C-TZ-2TG"/>
+                                                    <constraint firstAttribute="width" constant="50" id="LNx-UQ-2ol"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1h-gc-kYL">
+                                                <rect key="frame" x="8" y="182" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="9wM-80-v3y"/>
+                                                    <constraint firstAttribute="height" constant="50" id="eq4-1C-n1U"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tE-qN-snl">
+                                                <rect key="frame" x="66" y="182" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="KwF-w9-SNR"/>
+                                                    <constraint firstAttribute="height" constant="50" id="e5c-xA-Hft"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-lY-dPc">
+                                                <rect key="frame" x="124" y="182" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="LXA-Ni-MuR"/>
+                                                    <constraint firstAttribute="width" constant="50" id="yRh-q5-p0Y"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUW-sx-Mw9">
+                                                <rect key="frame" x="182" y="182" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="I8Y-Sr-7X8"/>
+                                                    <constraint firstAttribute="width" constant="50" id="iCU-Om-AtQ"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-v7-AXu">
+                                                <rect key="frame" x="240" y="182" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Hgl-2N-TG1"/>
+                                                    <constraint firstAttribute="width" constant="50" id="tCV-mC-FnI"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afy-54-cj9">
+                                                <rect key="frame" x="298" y="182" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="LVc-H8-NjJ"/>
+                                                    <constraint firstAttribute="width" constant="50" id="tbL-1w-BFa"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77l-iJ-9eA">
+                                                <rect key="frame" x="356" y="182" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ZGs-vL-3FR"/>
+                                                    <constraint firstAttribute="width" constant="50" id="zD8-zk-b2c"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2k-aw-7qX">
+                                                <rect key="frame" x="414" y="182" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="dHv-pc-qSZ"/>
+                                                    <constraint firstAttribute="width" constant="50" id="fcB-1B-LwT"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OY-P1-k52">
+                                                <rect key="frame" x="472" y="182" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="jHd-Ej-HX7"/>
+                                                    <constraint firstAttribute="width" constant="50" id="puN-FZ-8aB"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2M-US-twM">
+                                                <rect key="frame" x="8" y="240" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="pMD-BU-Bq4"/>
+                                                    <constraint firstAttribute="width" constant="50" id="r1X-ZT-JIh"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVW-9F-B0e">
+                                                <rect key="frame" x="66" y="240" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="7Bm-Nf-Oaq"/>
+                                                    <constraint firstAttribute="width" constant="50" id="bhG-Pb-58O"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiD-6t-yue">
+                                                <rect key="frame" x="124" y="240" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="eeg-fe-gtf"/>
+                                                    <constraint firstAttribute="height" constant="50" id="oOK-mr-v5s"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as2-LV-5s1">
+                                                <rect key="frame" x="182" y="240" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Y4e-T3-46l"/>
+                                                    <constraint firstAttribute="width" constant="50" id="i3o-KC-UvR"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brz-Ma-n5j">
+                                                <rect key="frame" x="240" y="240" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6Oy-kp-KCi"/>
+                                                    <constraint firstAttribute="width" constant="50" id="Mr0-Xq-bW0"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViA-BJ-3eC">
+                                                <rect key="frame" x="298" y="240" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Cat-QN-hHl"/>
+                                                    <constraint firstAttribute="height" constant="50" id="im2-PT-Vj1"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-jG-npX">
+                                                <rect key="frame" x="356" y="240" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Nem-Ic-bTK"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Wyi-Uh-x4T"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNH-x0-eJN">
+                                                <rect key="frame" x="414" y="240" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ApR-uQ-jau"/>
+                                                    <constraint firstAttribute="width" constant="50" id="wRn-T5-nXd"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AU-GR-QU7">
+                                                <rect key="frame" x="472" y="240" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="IPP-Be-2b3"/>
+                                                    <constraint firstAttribute="height" constant="50" id="r21-cr-jrY"/>
+                                                </constraints>
+                                                <state key="normal" image="bear"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="eCQ-eF-ocL" secondAttribute="trailing" constant="502" id="5L6-JO-rwi"/>
+                                            <constraint firstItem="eCQ-eF-ocL" firstAttribute="leading" secondItem="pdC-Ln-H6V" secondAttribute="leadingMargin" id="7ku-Fi-vCo"/>
+                                            <constraint firstItem="eCQ-eF-ocL" firstAttribute="top" secondItem="pdC-Ln-H6V" secondAttribute="topMargin" id="OMk-S3-5tq"/>
+                                            <constraint firstAttribute="bottom" secondItem="eCQ-eF-ocL" secondAttribute="bottom" constant="222" id="xeD-BR-vuC"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pdC-Ln-H6V" firstAttribute="leading" secondItem="IEL-Wf-8aJ" secondAttribute="leading" id="65i-XJ-dOl"/>
+                                    <constraint firstItem="IzQ-ci-izh" firstAttribute="leading" secondItem="IEL-Wf-8aJ" secondAttribute="leading" id="XBp-fn-hRE"/>
+                                    <constraint firstAttribute="trailing" secondItem="IzQ-ci-izh" secondAttribute="trailing" id="sNX-AQ-GpZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="pdC-Ln-H6V" secondAttribute="trailing" id="yfI-7E-5xP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IEL-Wf-8aJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="3FW-0S-CeX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="IEL-Wf-8aJ" secondAttribute="bottom" id="Jil-QE-Hm6"/>
+                            <constraint firstItem="IEL-Wf-8aJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Wk5-kr-PxY"/>
+                            <constraint firstItem="IEL-Wf-8aJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eJg-Op-Jyt"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="146"/>
+            <point key="canvasLocation" x="304" y="136"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bear" width="120" height="120"/>
+    </resources>
 </document>
