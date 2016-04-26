@@ -72,7 +72,10 @@
                                                     <constraint firstAttribute="width" constant="50" id="7bs-YY-oN8"/>
                                                     <constraint firstAttribute="height" constant="50" id="M0H-AZ-oa9"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="bat"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LLh-ey-Hn9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLJ-Ns-St2">
                                                 <rect key="frame" x="66" y="8" width="50" height="50"/>
@@ -81,6 +84,9 @@
                                                     <constraint firstAttribute="width" constant="50" id="hUF-xu-8m4"/>
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qVF-QF-e6b"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPJ-Oq-KHt">
                                                 <rect key="frame" x="124" y="8" width="50" height="50"/>
@@ -88,7 +94,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="A2i-co-Jcr"/>
                                                     <constraint firstAttribute="width" constant="50" id="Xba-kR-Qlb"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="rooster"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcS-GZ-Fqb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elu-0Z-cGZ">
                                                 <rect key="frame" x="182" y="8" width="50" height="50"/>
@@ -96,7 +105,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="5Gk-f3-mlS"/>
                                                     <constraint firstAttribute="width" constant="50" id="zNJ-zE-Vca"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="cat"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1Z-sv-Aou"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3H-aY-BUS">
                                                 <rect key="frame" x="240" y="8" width="50" height="50"/>
@@ -104,7 +116,10 @@
                                                     <constraint firstAttribute="width" constant="50" id="81S-Fg-GWg"/>
                                                     <constraint firstAttribute="height" constant="50" id="AR2-Pt-pSM"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="chicken"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="th9-d3-I4Z"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58k-qK-FfE">
                                                 <rect key="frame" x="298" y="8" width="50" height="50"/>
@@ -112,7 +127,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="kHE-67-wfp"/>
                                                     <constraint firstAttribute="width" constant="50" id="y18-r9-DOv"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="cow"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IVm-Vc-OdZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-tQ-r8i">
                                                 <rect key="frame" x="356" y="8" width="50" height="50"/>
@@ -120,7 +138,10 @@
                                                     <constraint firstAttribute="width" constant="50" id="bjO-l5-xBt"/>
                                                     <constraint firstAttribute="height" constant="50" id="yrd-C9-iG6"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="crow"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYi-cm-zsz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEd-jg-JsX">
                                                 <rect key="frame" x="414" y="8" width="50" height="50"/>
@@ -129,6 +150,9 @@
                                                     <constraint firstAttribute="width" constant="50" id="BrC-22-dbD"/>
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hgd-I2-W7J"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-lQ-4z5">
                                                 <rect key="frame" x="472" y="8" width="50" height="50"/>
@@ -136,7 +160,10 @@
                                                     <constraint firstAttribute="width" constant="50" id="Byk-oZ-9CE"/>
                                                     <constraint firstAttribute="height" constant="50" id="ghh-bC-SKs"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="dog"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nj6-x5-kxu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky3-Y9-pMn">
                                                 <rect key="frame" x="8" y="66" width="50" height="50"/>
@@ -144,7 +171,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="bDP-b2-alA"/>
                                                     <constraint firstAttribute="width" constant="50" id="r8y-mv-7a3"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="duck"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evg-IZ-xrc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBC-23-HZ0">
                                                 <rect key="frame" x="66" y="66" width="50" height="50"/>
@@ -152,7 +182,10 @@
                                                     <constraint firstAttribute="width" constant="50" id="Zf7-WB-utH"/>
                                                     <constraint firstAttribute="height" constant="50" id="bzS-9b-O2h"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="eagle"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sUu-Ju-nEB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FB-IS-zzM">
                                                 <rect key="frame" x="124" y="66" width="50" height="50"/>
@@ -160,7 +193,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="BPO-NI-dbE"/>
                                                     <constraint firstAttribute="width" constant="50" id="VOf-WA-h1j"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="elephant"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ODV-zc-PGg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-Fx-Vs5">
                                                 <rect key="frame" x="182" y="66" width="50" height="50"/>
@@ -168,7 +204,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="Mxz-4n-m2A"/>
                                                     <constraint firstAttribute="width" constant="50" id="cYA-lL-8tV"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="horse"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YbF-tN-1bC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcS-Fe-EoJ">
                                                 <rect key="frame" x="240" y="66" width="50" height="50"/>
@@ -176,7 +215,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="Cib-RH-bDR"/>
                                                     <constraint firstAttribute="width" constant="50" id="N3K-Fb-gkA"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="lion"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rxd-0R-cQb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd7-Pi-hxO">
                                                 <rect key="frame" x="298" y="66" width="50" height="50"/>
@@ -184,7 +226,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="Egx-fg-1XX"/>
                                                     <constraint firstAttribute="width" constant="50" id="lSK-sk-xAj"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="monkey"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Xg-eH-ruD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sr-bg-XKJ">
                                                 <rect key="frame" x="356" y="66" width="50" height="50"/>
@@ -192,7 +237,10 @@
                                                     <constraint firstAttribute="width" constant="50" id="I3Z-8n-hY4"/>
                                                     <constraint firstAttribute="height" constant="50" id="Kf6-16-0IO"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="owl"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DdK-cx-zSL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgL-IP-iYK">
                                                 <rect key="frame" x="414" y="66" width="50" height="50"/>
@@ -200,7 +248,10 @@
                                                     <constraint firstAttribute="width" constant="50" id="CDI-wm-i6c"/>
                                                     <constraint firstAttribute="height" constant="50" id="vjz-BP-KJO"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="pig"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDf-2N-bX7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nje-zM-eN1">
                                                 <rect key="frame" x="472" y="66" width="50" height="50"/>
@@ -209,6 +260,9 @@
                                                     <constraint firstAttribute="width" constant="50" id="vVn-ZN-Vwr"/>
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cGG-KP-Sog"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCK-BN-OcV">
                                                 <rect key="frame" x="8" y="124" width="50" height="50"/>
@@ -216,7 +270,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="KlA-Wb-RcE"/>
                                                     <constraint firstAttribute="width" constant="50" id="iPf-Lj-ro0"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="river"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2eh-ss-1j4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-E3-wf4">
                                                 <rect key="frame" x="66" y="124" width="50" height="50"/>
@@ -224,7 +281,10 @@
                                                     <constraint firstAttribute="width" constant="50" id="IUw-zv-dKH"/>
                                                     <constraint firstAttribute="height" constant="50" id="zWj-uX-vTb"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="wind"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQo-nA-sRS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLG-pQ-Kqq">
                                                 <rect key="frame" x="124" y="124" width="50" height="50"/>
@@ -232,7 +292,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="E4U-Zb-RtH"/>
                                                     <constraint firstAttribute="width" constant="50" id="Lix-ja-dF6"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="thunder"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EMf-ty-6Se"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvI-lz-vBZ">
                                                 <rect key="frame" x="182" y="124" width="50" height="50"/>
@@ -240,7 +303,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="MSY-kf-QjB"/>
                                                     <constraint firstAttribute="width" constant="50" id="a2Z-Dj-1dI"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="rain"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCL-dB-mLL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2u-qk-M7G">
                                                 <rect key="frame" x="240" y="124" width="50" height="50"/>
@@ -248,7 +314,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="Xfk-k9-4IG"/>
                                                     <constraint firstAttribute="width" constant="50" id="shm-cg-xLI"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="car"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2w-3Z-qmh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqo-ol-1uW">
                                                 <rect key="frame" x="298" y="124" width="50" height="50"/>
@@ -256,7 +325,10 @@
                                                     <constraint firstAttribute="height" constant="50" id="5Zi-jh-OzT"/>
                                                     <constraint firstAttribute="width" constant="50" id="S8q-mN-Sph"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="train"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Soo-K8-E4u"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riO-3f-zHM">
                                                 <rect key="frame" x="356" y="124" width="50" height="50"/>
@@ -321,6 +393,9 @@
                                                     <constraint firstAttribute="width" constant="50" id="tCV-mC-FnI"/>
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YF2-Jv-ZdW"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afy-54-cj9">
                                                 <rect key="frame" x="298" y="182" width="50" height="50"/>
@@ -539,6 +614,30 @@
                             <constraint firstItem="IEL-Wf-8aJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eJg-Op-Jyt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnBat" destination="eCQ-eF-ocL" id="iRB-db-Sco"/>
+                        <outlet property="btnBear" destination="SLJ-Ns-St2" id="Ulm-uG-wJ7"/>
+                        <outlet property="btnCar" destination="t2u-qk-M7G" id="3Yc-O9-8Cp"/>
+                        <outlet property="btnCat" destination="elu-0Z-cGZ" id="ick-Ln-Jo9"/>
+                        <outlet property="btnChicken" destination="u3H-aY-BUS" id="np0-mj-5NK"/>
+                        <outlet property="btnCow" destination="58k-qK-FfE" id="2Vl-w0-39k"/>
+                        <outlet property="btnCrow" destination="Ves-tQ-r8i" id="Lim-1J-dah"/>
+                        <outlet property="btnDog" destination="Gk5-lQ-4z5" id="ZO3-zJ-4IZ"/>
+                        <outlet property="btnDuck" destination="Ky3-Y9-pMn" id="mho-xm-MWB"/>
+                        <outlet property="btnEagle" destination="uBC-23-HZ0" id="FI3-Sm-Fia"/>
+                        <outlet property="btnElephant" destination="9FB-IS-zzM" id="niF-8g-CKc"/>
+                        <outlet property="btnHorse" destination="4Wc-Fx-Vs5" id="LlQ-yY-QgP"/>
+                        <outlet property="btnLion" destination="kcS-Fe-EoJ" id="6eg-7w-Wdp"/>
+                        <outlet property="btnMonkey" destination="Cd7-Pi-hxO" id="AOO-xk-GAc"/>
+                        <outlet property="btnOwl" destination="8Sr-bg-XKJ" id="MJK-XT-h0x"/>
+                        <outlet property="btnPig" destination="LgL-IP-iYK" id="eXi-HI-DbD"/>
+                        <outlet property="btnRain" destination="TvI-lz-vBZ" id="4Ob-xU-slv"/>
+                        <outlet property="btnRiver" destination="UCK-BN-OcV" id="YxT-oU-smx"/>
+                        <outlet property="btnRooster" destination="KPJ-Oq-KHt" id="djj-gL-pNK"/>
+                        <outlet property="btnThunder" destination="FLG-pQ-Kqq" id="CSM-7R-hfo"/>
+                        <outlet property="btnTrain" destination="rqo-ol-1uW" id="ujx-6b-Nov"/>
+                        <outlet property="btnWind" destination="pRh-E3-wf4" id="jwK-kD-y8I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -546,9 +645,30 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bat" width="120" height="120"/>
         <image name="bear" width="120" height="120"/>
-        <image name="play" width="256" height="256"/>
-        <image name="record" width="170" height="170"/>
-        <image name="stop" width="128" height="128"/>
+        <image name="car" width="120" height="120"/>
+        <image name="cat" width="120" height="120"/>
+        <image name="chicken" width="120" height="120"/>
+        <image name="cow" width="120" height="120"/>
+        <image name="crow" width="120" height="120"/>
+        <image name="dog" width="120" height="120"/>
+        <image name="duck" width="120" height="120"/>
+        <image name="eagle" width="120" height="120"/>
+        <image name="elephant" width="120" height="120"/>
+        <image name="horse" width="120" height="120"/>
+        <image name="lion" width="120" height="120"/>
+        <image name="monkey" width="120" height="120"/>
+        <image name="owl" width="120" height="120"/>
+        <image name="pig" width="120" height="120"/>
+        <image name="play" width="120" height="120"/>
+        <image name="rain" width="120" height="120"/>
+        <image name="record" width="120" height="120"/>
+        <image name="river" width="120" height="120"/>
+        <image name="rooster" width="120" height="120"/>
+        <image name="stop" width="120" height="120"/>
+        <image name="thunder" width="120" height="120"/>
+        <image name="train" width="120" height="120"/>
+        <image name="wind" width="120" height="120"/>
     </resources>
 </document>
