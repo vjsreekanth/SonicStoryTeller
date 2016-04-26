@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -23,6 +24,44 @@
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzQ-ci-izh">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="280"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-4e-zdH">
+                                                <rect key="frame" x="255" y="222" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="PMD-iV-HJZ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="record"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7q-eK-MVe">
+                                                <rect key="frame" x="187" y="222" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="sZS-UX-yPr"/>
+                                                    <constraint firstAttribute="width" constant="50" id="xRF-hJ-M9z"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="play"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luk-xg-iMu">
+                                                <rect key="frame" x="323" y="222" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="t7h-rE-gkc"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="stop"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="luk-xg-iMu" firstAttribute="leading" secondItem="8nn-4e-zdH" secondAttribute="trailing" constant="18" id="2qO-Rb-coA"/>
+                                            <constraint firstItem="8nn-4e-zdH" firstAttribute="leading" secondItem="G7q-eK-MVe" secondAttribute="trailing" constant="18" id="3ad-Za-wBy"/>
+                                            <constraint firstItem="G7q-eK-MVe" firstAttribute="baseline" secondItem="8nn-4e-zdH" secondAttribute="baseline" id="6fl-Mx-Ny0"/>
+                                            <constraint firstItem="8nn-4e-zdH" firstAttribute="firstBaseline" secondItem="luk-xg-iMu" secondAttribute="firstBaseline" id="BPx-H9-RVg"/>
+                                            <constraint firstItem="G7q-eK-MVe" firstAttribute="top" secondItem="8nn-4e-zdH" secondAttribute="top" id="Cu1-ry-gvt"/>
+                                            <constraint firstItem="8nn-4e-zdH" firstAttribute="top" secondItem="luk-xg-iMu" secondAttribute="top" id="XqN-pI-StE"/>
+                                            <constraint firstItem="8nn-4e-zdH" firstAttribute="centerX" secondItem="IzQ-ci-izh" secondAttribute="centerX" id="jU2-Ts-Bml"/>
+                                            <constraint firstItem="8nn-4e-zdH" firstAttribute="baseline" secondItem="luk-xg-iMu" secondAttribute="baseline" id="jaw-M8-vWR"/>
+                                            <constraint firstItem="G7q-eK-MVe" firstAttribute="firstBaseline" secondItem="8nn-4e-zdH" secondAttribute="firstBaseline" id="n3e-7L-Nhv"/>
+                                            <constraint firstItem="G7q-eK-MVe" firstAttribute="bottom" secondItem="IzQ-ci-izh" secondAttribute="bottomMargin" id="udh-gd-p1f"/>
+                                            <constraint firstAttribute="trailing" secondItem="luk-xg-iMu" secondAttribute="trailing" constant="187" id="uhN-fl-jTy"/>
+                                            <constraint firstItem="G7q-eK-MVe" firstAttribute="top" secondItem="IzQ-ci-izh" secondAttribute="top" constant="222" id="v01-nO-uIf"/>
+                                        </constraints>
                                     </scrollView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdC-Ln-H6V">
                                         <rect key="frame" x="0.0" y="280" width="560" height="280"/>
@@ -35,7 +74,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLJ-Ns-St2">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLJ-Ns-St2">
                                                 <rect key="frame" x="66" y="8" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="bRz-XA-FKi"/>
@@ -43,7 +82,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPJ-Oq-KHt">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPJ-Oq-KHt">
                                                 <rect key="frame" x="124" y="8" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="A2i-co-Jcr"/>
@@ -51,7 +90,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elu-0Z-cGZ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elu-0Z-cGZ">
                                                 <rect key="frame" x="182" y="8" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="5Gk-f3-mlS"/>
@@ -59,7 +98,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3H-aY-BUS">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3H-aY-BUS">
                                                 <rect key="frame" x="240" y="8" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="81S-Fg-GWg"/>
@@ -67,7 +106,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58k-qK-FfE">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58k-qK-FfE">
                                                 <rect key="frame" x="298" y="8" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="kHE-67-wfp"/>
@@ -75,7 +114,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-tQ-r8i">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-tQ-r8i">
                                                 <rect key="frame" x="356" y="8" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="bjO-l5-xBt"/>
@@ -83,7 +122,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEd-jg-JsX">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEd-jg-JsX">
                                                 <rect key="frame" x="414" y="8" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="5mS-N7-XgQ"/>
@@ -91,7 +130,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-lQ-4z5">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-lQ-4z5">
                                                 <rect key="frame" x="472" y="8" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="Byk-oZ-9CE"/>
@@ -99,7 +138,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky3-Y9-pMn">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky3-Y9-pMn">
                                                 <rect key="frame" x="8" y="66" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="bDP-b2-alA"/>
@@ -107,7 +146,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBC-23-HZ0">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBC-23-HZ0">
                                                 <rect key="frame" x="66" y="66" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="Zf7-WB-utH"/>
@@ -115,7 +154,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FB-IS-zzM">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FB-IS-zzM">
                                                 <rect key="frame" x="124" y="66" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="BPO-NI-dbE"/>
@@ -123,7 +162,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-Fx-Vs5">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-Fx-Vs5">
                                                 <rect key="frame" x="182" y="66" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Mxz-4n-m2A"/>
@@ -131,7 +170,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcS-Fe-EoJ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcS-Fe-EoJ">
                                                 <rect key="frame" x="240" y="66" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Cib-RH-bDR"/>
@@ -139,7 +178,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd7-Pi-hxO">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd7-Pi-hxO">
                                                 <rect key="frame" x="298" y="66" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Egx-fg-1XX"/>
@@ -147,7 +186,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sr-bg-XKJ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sr-bg-XKJ">
                                                 <rect key="frame" x="356" y="66" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="I3Z-8n-hY4"/>
@@ -155,7 +194,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgL-IP-iYK">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgL-IP-iYK">
                                                 <rect key="frame" x="414" y="66" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="CDI-wm-i6c"/>
@@ -163,7 +202,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nje-zM-eN1">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nje-zM-eN1">
                                                 <rect key="frame" x="472" y="66" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="D1O-fP-Ssr"/>
@@ -171,7 +210,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCK-BN-OcV">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCK-BN-OcV">
                                                 <rect key="frame" x="8" y="124" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="KlA-Wb-RcE"/>
@@ -179,7 +218,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-E3-wf4">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-E3-wf4">
                                                 <rect key="frame" x="66" y="124" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="IUw-zv-dKH"/>
@@ -187,7 +226,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLG-pQ-Kqq">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLG-pQ-Kqq">
                                                 <rect key="frame" x="124" y="124" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="E4U-Zb-RtH"/>
@@ -195,7 +234,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvI-lz-vBZ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvI-lz-vBZ">
                                                 <rect key="frame" x="182" y="124" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="MSY-kf-QjB"/>
@@ -203,7 +242,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2u-qk-M7G">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2u-qk-M7G">
                                                 <rect key="frame" x="240" y="124" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Xfk-k9-4IG"/>
@@ -211,7 +250,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqo-ol-1uW">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqo-ol-1uW">
                                                 <rect key="frame" x="298" y="124" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="5Zi-jh-OzT"/>
@@ -219,7 +258,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riO-3f-zHM">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riO-3f-zHM">
                                                 <rect key="frame" x="356" y="124" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="3hx-rP-Pfp"/>
@@ -227,7 +266,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPs-Wp-ADW">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPs-Wp-ADW">
                                                 <rect key="frame" x="414" y="124" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="cWs-uS-EaY"/>
@@ -235,7 +274,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WQ-tY-1Yd">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WQ-tY-1Yd">
                                                 <rect key="frame" x="472" y="124" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="E7C-TZ-2TG"/>
@@ -243,7 +282,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1h-gc-kYL">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1h-gc-kYL">
                                                 <rect key="frame" x="8" y="182" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="9wM-80-v3y"/>
@@ -251,7 +290,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tE-qN-snl">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tE-qN-snl">
                                                 <rect key="frame" x="66" y="182" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="KwF-w9-SNR"/>
@@ -259,7 +298,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-lY-dPc">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-lY-dPc">
                                                 <rect key="frame" x="124" y="182" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="LXA-Ni-MuR"/>
@@ -267,7 +306,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUW-sx-Mw9">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUW-sx-Mw9">
                                                 <rect key="frame" x="182" y="182" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="I8Y-Sr-7X8"/>
@@ -275,7 +314,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-v7-AXu">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-v7-AXu">
                                                 <rect key="frame" x="240" y="182" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Hgl-2N-TG1"/>
@@ -283,7 +322,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afy-54-cj9">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afy-54-cj9">
                                                 <rect key="frame" x="298" y="182" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="LVc-H8-NjJ"/>
@@ -291,7 +330,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77l-iJ-9eA">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77l-iJ-9eA">
                                                 <rect key="frame" x="356" y="182" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ZGs-vL-3FR"/>
@@ -299,7 +338,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2k-aw-7qX">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2k-aw-7qX">
                                                 <rect key="frame" x="414" y="182" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="dHv-pc-qSZ"/>
@@ -307,7 +346,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OY-P1-k52">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OY-P1-k52">
                                                 <rect key="frame" x="472" y="182" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="jHd-Ej-HX7"/>
@@ -315,7 +354,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2M-US-twM">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2M-US-twM">
                                                 <rect key="frame" x="8" y="240" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="pMD-BU-Bq4"/>
@@ -323,7 +362,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVW-9F-B0e">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVW-9F-B0e">
                                                 <rect key="frame" x="66" y="240" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="7Bm-Nf-Oaq"/>
@@ -331,7 +370,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiD-6t-yue">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiD-6t-yue">
                                                 <rect key="frame" x="124" y="240" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="eeg-fe-gtf"/>
@@ -339,7 +378,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as2-LV-5s1">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as2-LV-5s1">
                                                 <rect key="frame" x="182" y="240" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Y4e-T3-46l"/>
@@ -347,7 +386,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brz-Ma-n5j">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brz-Ma-n5j">
                                                 <rect key="frame" x="240" y="240" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="6Oy-kp-KCi"/>
@@ -355,7 +394,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViA-BJ-3eC">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViA-BJ-3eC">
                                                 <rect key="frame" x="298" y="240" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="Cat-QN-hHl"/>
@@ -363,7 +402,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-jG-npX">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-jG-npX">
                                                 <rect key="frame" x="356" y="240" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="Nem-Ic-bTK"/>
@@ -371,7 +410,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNH-x0-eJN">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNH-x0-eJN">
                                                 <rect key="frame" x="414" y="240" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ApR-uQ-jau"/>
@@ -379,7 +418,7 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AU-GR-QU7">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AU-GR-QU7">
                                                 <rect key="frame" x="472" y="240" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="IPP-Be-2b3"/>
@@ -389,10 +428,98 @@
                                             </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="KPJ-Oq-KHt" firstAttribute="top" secondItem="elu-0Z-cGZ" secondAttribute="top" id="00J-5K-xIC"/>
+                                            <constraint firstItem="Nje-zM-eN1" firstAttribute="leading" secondItem="8WQ-tY-1Yd" secondAttribute="leading" id="0DO-LB-2iO"/>
+                                            <constraint firstItem="SLJ-Ns-St2" firstAttribute="top" secondItem="eCQ-eF-ocL" secondAttribute="top" id="0by-IV-U89"/>
+                                            <constraint firstItem="UCK-BN-OcV" firstAttribute="leading" secondItem="z1h-gc-kYL" secondAttribute="leading" id="1GJ-tx-bMF"/>
+                                            <constraint firstItem="4Wc-Fx-Vs5" firstAttribute="top" secondItem="kcS-Fe-EoJ" secondAttribute="top" id="1eV-LG-Jgb"/>
+                                            <constraint firstItem="u3H-aY-BUS" firstAttribute="leading" secondItem="kcS-Fe-EoJ" secondAttribute="leading" id="1tN-o5-knO"/>
+                                            <constraint firstItem="SLJ-Ns-St2" firstAttribute="top" secondItem="KPJ-Oq-KHt" secondAttribute="top" id="2Lm-j0-7dA"/>
+                                            <constraint firstItem="OiD-6t-yue" firstAttribute="top" secondItem="as2-LV-5s1" secondAttribute="top" id="3lw-FP-L4f"/>
+                                            <constraint firstItem="wPs-Wp-ADW" firstAttribute="leading" secondItem="L2k-aw-7qX" secondAttribute="leading" id="4l8-xp-U6z"/>
+                                            <constraint firstItem="Afy-54-cj9" firstAttribute="leading" secondItem="ViA-BJ-3eC" secondAttribute="leading" id="4wl-fZ-uNL"/>
+                                            <constraint firstItem="aEd-jg-JsX" firstAttribute="top" secondItem="Gk5-lQ-4z5" secondAttribute="top" id="5IE-ZX-R0p"/>
                                             <constraint firstAttribute="trailing" secondItem="eCQ-eF-ocL" secondAttribute="trailing" constant="502" id="5L6-JO-rwi"/>
+                                            <constraint firstItem="rqo-ol-1uW" firstAttribute="leading" secondItem="Afy-54-cj9" secondAttribute="leading" id="5kH-Vz-5Hx"/>
+                                            <constraint firstItem="riO-3f-zHM" firstAttribute="leading" secondItem="77l-iJ-9eA" secondAttribute="leading" id="6TL-2h-MiL"/>
+                                            <constraint firstItem="L2k-aw-7qX" firstAttribute="leading" secondItem="pNH-x0-eJN" secondAttribute="leading" id="6Yo-IK-CdI"/>
                                             <constraint firstItem="eCQ-eF-ocL" firstAttribute="leading" secondItem="pdC-Ln-H6V" secondAttribute="leadingMargin" id="7ku-Fi-vCo"/>
+                                            <constraint firstItem="zUW-sx-Mw9" firstAttribute="top" secondItem="WQ8-v7-AXu" secondAttribute="top" id="7sE-2R-J6S"/>
+                                            <constraint firstItem="Ky3-Y9-pMn" firstAttribute="top" secondItem="eCQ-eF-ocL" secondAttribute="bottom" constant="8" symbolic="YES" id="8J3-f5-lAU"/>
+                                            <constraint firstItem="Ky3-Y9-pMn" firstAttribute="top" secondItem="uBC-23-HZ0" secondAttribute="top" id="91t-Qp-GE1"/>
+                                            <constraint firstItem="6tE-qN-snl" firstAttribute="top" secondItem="qJK-lY-dPc" secondAttribute="top" id="B7d-xU-Xas"/>
+                                            <constraint firstItem="J2M-US-twM" firstAttribute="top" secondItem="z1h-gc-kYL" secondAttribute="bottom" constant="8" symbolic="YES" id="BSC-6S-kfp"/>
+                                            <constraint firstItem="elu-0Z-cGZ" firstAttribute="leading" secondItem="KPJ-Oq-KHt" secondAttribute="trailing" constant="8" symbolic="YES" id="BgP-qv-fqx"/>
+                                            <constraint firstItem="zUW-sx-Mw9" firstAttribute="leading" secondItem="as2-LV-5s1" secondAttribute="leading" id="CtT-Ab-ObR"/>
+                                            <constraint firstItem="z1h-gc-kYL" firstAttribute="top" secondItem="6tE-qN-snl" secondAttribute="top" id="Dt7-gT-qwO"/>
+                                            <constraint firstItem="58k-qK-FfE" firstAttribute="leading" secondItem="u3H-aY-BUS" secondAttribute="trailing" constant="8" symbolic="YES" id="EUF-Ou-wP8"/>
+                                            <constraint firstItem="Ves-tQ-r8i" firstAttribute="top" secondItem="aEd-jg-JsX" secondAttribute="top" id="EW6-S9-O7K"/>
+                                            <constraint firstItem="kcS-Fe-EoJ" firstAttribute="top" secondItem="Cd7-Pi-hxO" secondAttribute="top" id="FNA-l5-tot"/>
+                                            <constraint firstItem="vVW-9F-B0e" firstAttribute="top" secondItem="OiD-6t-yue" secondAttribute="top" id="GFT-ZP-E2Y"/>
+                                            <constraint firstItem="z1h-gc-kYL" firstAttribute="top" secondItem="UCK-BN-OcV" secondAttribute="bottom" constant="8" symbolic="YES" id="GOm-Rb-j0R"/>
+                                            <constraint firstItem="TvI-lz-vBZ" firstAttribute="leading" secondItem="zUW-sx-Mw9" secondAttribute="leading" id="GWU-iz-yl5"/>
+                                            <constraint firstItem="qJK-lY-dPc" firstAttribute="top" secondItem="zUW-sx-Mw9" secondAttribute="top" id="H4r-Mr-6hK"/>
+                                            <constraint firstItem="LgL-IP-iYK" firstAttribute="leading" secondItem="wPs-Wp-ADW" secondAttribute="leading" id="Hve-5M-Rpl"/>
+                                            <constraint firstItem="8Sr-bg-XKJ" firstAttribute="top" secondItem="LgL-IP-iYK" secondAttribute="top" id="Hyf-eK-AgA"/>
+                                            <constraint firstItem="KPJ-Oq-KHt" firstAttribute="leading" secondItem="9FB-IS-zzM" secondAttribute="leading" id="I2Z-LQ-YUX"/>
+                                            <constraint firstItem="elu-0Z-cGZ" firstAttribute="top" secondItem="u3H-aY-BUS" secondAttribute="top" id="JNI-Zt-L1m"/>
+                                            <constraint firstItem="Brz-Ma-n5j" firstAttribute="top" secondItem="ViA-BJ-3eC" secondAttribute="top" id="KkM-oy-tqb"/>
+                                            <constraint firstItem="KPJ-Oq-KHt" firstAttribute="leading" secondItem="SLJ-Ns-St2" secondAttribute="trailing" constant="8" symbolic="YES" id="Lt7-pc-Iix"/>
+                                            <constraint firstItem="8Sr-bg-XKJ" firstAttribute="leading" secondItem="riO-3f-zHM" secondAttribute="leading" id="MUP-2C-bTp"/>
+                                            <constraint firstItem="58k-qK-FfE" firstAttribute="leading" secondItem="Cd7-Pi-hxO" secondAttribute="leading" id="Mk8-LH-UwK"/>
+                                            <constraint firstItem="pRh-E3-wf4" firstAttribute="top" secondItem="FLG-pQ-Kqq" secondAttribute="top" id="MyM-SL-mma"/>
                                             <constraint firstItem="eCQ-eF-ocL" firstAttribute="top" secondItem="pdC-Ln-H6V" secondAttribute="topMargin" id="OMk-S3-5tq"/>
+                                            <constraint firstItem="elu-0Z-cGZ" firstAttribute="leading" secondItem="4Wc-Fx-Vs5" secondAttribute="leading" id="OVh-84-pRg"/>
+                                            <constraint firstItem="FLG-pQ-Kqq" firstAttribute="top" secondItem="TvI-lz-vBZ" secondAttribute="top" id="OZ6-8i-EWP"/>
+                                            <constraint firstItem="L2k-aw-7qX" firstAttribute="top" secondItem="1OY-P1-k52" secondAttribute="top" id="Ocr-M5-Dh0"/>
+                                            <constraint firstItem="wPs-Wp-ADW" firstAttribute="top" secondItem="8WQ-tY-1Yd" secondAttribute="top" id="Q5M-jv-6xO"/>
+                                            <constraint firstItem="WQ8-v7-AXu" firstAttribute="top" secondItem="Afy-54-cj9" secondAttribute="top" id="Q6W-fV-5EU"/>
+                                            <constraint firstItem="58k-qK-FfE" firstAttribute="top" secondItem="Ves-tQ-r8i" secondAttribute="top" id="QAC-49-f5M"/>
+                                            <constraint firstItem="Gk5-lQ-4z5" firstAttribute="leading" secondItem="Nje-zM-eN1" secondAttribute="leading" id="QVF-BA-cvT"/>
+                                            <constraint firstItem="9FB-IS-zzM" firstAttribute="leading" secondItem="FLG-pQ-Kqq" secondAttribute="leading" id="QyS-xG-PdY"/>
+                                            <constraint firstItem="kcS-Fe-EoJ" firstAttribute="leading" secondItem="t2u-qk-M7G" secondAttribute="leading" id="SDY-Pp-CB7"/>
+                                            <constraint firstItem="Cd7-Pi-hxO" firstAttribute="top" secondItem="8Sr-bg-XKJ" secondAttribute="top" id="ScQ-i6-pvb"/>
+                                            <constraint firstItem="z1h-gc-kYL" firstAttribute="leading" secondItem="J2M-US-twM" secondAttribute="leading" id="TjH-BS-a2D"/>
+                                            <constraint firstItem="SLJ-Ns-St2" firstAttribute="leading" secondItem="uBC-23-HZ0" secondAttribute="leading" id="Ugz-2d-OFw"/>
+                                            <constraint firstItem="Afy-54-cj9" firstAttribute="top" secondItem="77l-iJ-9eA" secondAttribute="top" id="VMF-Oh-K1g"/>
+                                            <constraint firstItem="ViA-BJ-3eC" firstAttribute="top" secondItem="e2W-jG-npX" secondAttribute="top" id="WMk-ic-I10"/>
+                                            <constraint firstItem="UCK-BN-OcV" firstAttribute="top" secondItem="pRh-E3-wf4" secondAttribute="top" id="WRN-zJ-eXW"/>
+                                            <constraint firstItem="Ky3-Y9-pMn" firstAttribute="leading" secondItem="UCK-BN-OcV" secondAttribute="leading" id="WUn-hp-vku"/>
+                                            <constraint firstItem="77l-iJ-9eA" firstAttribute="top" secondItem="L2k-aw-7qX" secondAttribute="top" id="XCO-M2-0Sz"/>
+                                            <constraint firstItem="aEd-jg-JsX" firstAttribute="leading" secondItem="Ves-tQ-r8i" secondAttribute="trailing" constant="8" symbolic="YES" id="YWL-Io-jah"/>
+                                            <constraint firstItem="TvI-lz-vBZ" firstAttribute="top" secondItem="t2u-qk-M7G" secondAttribute="top" id="YzC-jS-E7M"/>
+                                            <constraint firstItem="77l-iJ-9eA" firstAttribute="leading" secondItem="e2W-jG-npX" secondAttribute="leading" id="Z1N-Ug-Zq7"/>
+                                            <constraint firstItem="1OY-P1-k52" firstAttribute="leading" secondItem="7AU-GR-QU7" secondAttribute="leading" id="a8V-jk-1vd"/>
+                                            <constraint firstItem="UCK-BN-OcV" firstAttribute="top" secondItem="Ky3-Y9-pMn" secondAttribute="bottom" constant="8" symbolic="YES" id="aAB-G5-fpc"/>
+                                            <constraint firstItem="u3H-aY-BUS" firstAttribute="top" secondItem="58k-qK-FfE" secondAttribute="top" id="ax9-bg-TX1"/>
+                                            <constraint firstItem="6tE-qN-snl" firstAttribute="leading" secondItem="vVW-9F-B0e" secondAttribute="leading" id="bHk-Xf-gXF"/>
+                                            <constraint firstItem="SLJ-Ns-St2" firstAttribute="leading" secondItem="eCQ-eF-ocL" secondAttribute="trailing" constant="8" symbolic="YES" id="bPY-w3-uAb"/>
+                                            <constraint firstItem="qJK-lY-dPc" firstAttribute="leading" secondItem="OiD-6t-yue" secondAttribute="leading" id="bTK-4t-v3G"/>
+                                            <constraint firstItem="Gk5-lQ-4z5" firstAttribute="leading" secondItem="aEd-jg-JsX" secondAttribute="trailing" constant="8" symbolic="YES" id="c3Q-bh-SWn"/>
+                                            <constraint firstItem="as2-LV-5s1" firstAttribute="top" secondItem="Brz-Ma-n5j" secondAttribute="top" id="dYb-cK-Xzc"/>
+                                            <constraint firstItem="riO-3f-zHM" firstAttribute="top" secondItem="wPs-Wp-ADW" secondAttribute="top" id="eve-eS-K54"/>
+                                            <constraint firstItem="t2u-qk-M7G" firstAttribute="top" secondItem="rqo-ol-1uW" secondAttribute="top" id="fEJ-aI-an6"/>
+                                            <constraint firstItem="rqo-ol-1uW" firstAttribute="top" secondItem="riO-3f-zHM" secondAttribute="top" id="hPn-hA-0ph"/>
+                                            <constraint firstItem="u3H-aY-BUS" firstAttribute="leading" secondItem="elu-0Z-cGZ" secondAttribute="trailing" constant="8" symbolic="YES" id="hzx-Ox-fbY"/>
+                                            <constraint firstItem="WQ8-v7-AXu" firstAttribute="leading" secondItem="Brz-Ma-n5j" secondAttribute="leading" id="jxW-mS-vSL"/>
+                                            <constraint firstItem="e2W-jG-npX" firstAttribute="top" secondItem="pNH-x0-eJN" secondAttribute="top" id="kIZ-Fg-AsT"/>
+                                            <constraint firstItem="9FB-IS-zzM" firstAttribute="top" secondItem="4Wc-Fx-Vs5" secondAttribute="top" id="kaV-nQ-pPc"/>
+                                            <constraint firstItem="Ves-tQ-r8i" firstAttribute="leading" secondItem="58k-qK-FfE" secondAttribute="trailing" constant="8" symbolic="YES" id="kwR-Rb-39w"/>
+                                            <constraint firstItem="Cd7-Pi-hxO" firstAttribute="leading" secondItem="rqo-ol-1uW" secondAttribute="leading" id="lVp-oR-gYG"/>
+                                            <constraint firstItem="Ky3-Y9-pMn" firstAttribute="leading" secondItem="eCQ-eF-ocL" secondAttribute="leading" id="mN8-k2-Nvu"/>
+                                            <constraint firstItem="8WQ-tY-1Yd" firstAttribute="leading" secondItem="1OY-P1-k52" secondAttribute="leading" id="mSm-TH-WGj"/>
+                                            <constraint firstItem="LgL-IP-iYK" firstAttribute="top" secondItem="Nje-zM-eN1" secondAttribute="top" id="nfG-pQ-i5g"/>
+                                            <constraint firstItem="4Wc-Fx-Vs5" firstAttribute="leading" secondItem="TvI-lz-vBZ" secondAttribute="leading" id="nns-I2-LFS"/>
+                                            <constraint firstItem="uBC-23-HZ0" firstAttribute="top" secondItem="9FB-IS-zzM" secondAttribute="top" id="o5x-Gm-PSf"/>
+                                            <constraint firstItem="aEd-jg-JsX" firstAttribute="leading" secondItem="LgL-IP-iYK" secondAttribute="leading" id="ocs-uE-yJY"/>
+                                            <constraint firstItem="t2u-qk-M7G" firstAttribute="leading" secondItem="WQ8-v7-AXu" secondAttribute="leading" id="rVI-TS-Lx2"/>
+                                            <constraint firstItem="pRh-E3-wf4" firstAttribute="leading" secondItem="6tE-qN-snl" secondAttribute="leading" id="snK-4y-i7y"/>
+                                            <constraint firstItem="FLG-pQ-Kqq" firstAttribute="leading" secondItem="qJK-lY-dPc" secondAttribute="leading" id="tHe-PB-3fl"/>
+                                            <constraint firstItem="pNH-x0-eJN" firstAttribute="top" secondItem="7AU-GR-QU7" secondAttribute="top" id="tP4-qP-3I7"/>
+                                            <constraint firstItem="uBC-23-HZ0" firstAttribute="leading" secondItem="pRh-E3-wf4" secondAttribute="leading" id="taW-Wu-efL"/>
                                             <constraint firstAttribute="bottom" secondItem="eCQ-eF-ocL" secondAttribute="bottom" constant="222" id="xeD-BR-vuC"/>
+                                            <constraint firstItem="J2M-US-twM" firstAttribute="top" secondItem="vVW-9F-B0e" secondAttribute="top" id="zHd-Yk-RLn"/>
+                                            <constraint firstItem="Ves-tQ-r8i" firstAttribute="leading" secondItem="8Sr-bg-XKJ" secondAttribute="leading" id="zbc-e2-RH4"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
@@ -420,5 +547,8 @@
     </scenes>
     <resources>
         <image name="bear" width="120" height="120"/>
+        <image name="play" width="256" height="256"/>
+        <image name="record" width="170" height="170"/>
+        <image name="stop" width="128" height="128"/>
     </resources>
 </document>
