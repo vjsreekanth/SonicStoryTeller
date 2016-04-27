@@ -38,9 +38,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnRain;
 @property (weak, nonatomic) IBOutlet UIButton *btnCar;
 @property (weak, nonatomic) IBOutlet UIButton *btnTrain;
-
 @property (weak, nonatomic) IBOutlet UIView *screenView;
 
+@property (nonatomic) NSMutableArray *arrSoundEFX;
 
 @end
 
@@ -49,6 +49,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.arrSoundEFX = [NSMutableArray array];
 }
 
 - (void)didReceiveMemoryWarning
@@ -153,7 +155,8 @@
     soundEFX.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 100, 50, 50)];
     [soundEFX.imageView setImage:btn.imageView.image];
     [self.screenView addSubview:soundEFX.imageView];
-
+    
+    [self.arrSoundEFX addObject:soundEFX];
 }
 
 

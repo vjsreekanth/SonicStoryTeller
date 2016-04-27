@@ -15,4 +15,28 @@
     return nil;
 }
 
+
+- (void)setImageView:(UIImageView *)imageView
+{
+    _imageView = imageView;
+    
+    [self addEventWithImageView:imageView];
+}
+
+- (void) addEventWithImageView:(UIImageView *)imgView
+{
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+    
+    self.imageView.userInteractionEnabled = YES;
+    [self.imageView addGestureRecognizer:pan];
+}
+
+- (void) handlePan:(UIPanGestureRecognizer *)panGesture
+{
+    CGPoint point = [panGesture locationInView:self.imageView.superview];
+    self.imageView.center = CGPointMake(point.x, self.imageView.center.y);
+}
+
+
+
 @end

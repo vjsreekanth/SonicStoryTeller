@@ -12,6 +12,7 @@
 
 @property (nonatomic) UIImageView *imageView;
 
+- (void) handlePan:(UIPanGestureRecognizer *)panGesture;
 - (NSString *) getSoundEFXName;
 
 @end
