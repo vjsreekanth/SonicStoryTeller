@@ -18,9 +18,6 @@
 		5E8BF0AA1CC199C90042A809 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8BF0A81CC199C90042A809 /* AVFoundation.framework */; };
 		5E8BF0B01CC19AA70042A809 /* BJIConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BF0AD1CC19AA70042A809 /* BJIConverter.m */; };
 		5E8BF0B11CC19AA70042A809 /* PCMMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BF0AF1CC19AA70042A809 /* PCMMixer.m */; };
-		5E8BF0B41CC19E080042A809 /* funk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E8BF0B31CC19E080042A809 /* funk.mp3 */; };
-		5E8BF0B71CC19E1D0042A809 /* tk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E8BF0B51CC19E1D0042A809 /* tk.mp3 */; };
-		5E8BF0B81CC19E1D0042A809 /* toms.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E8BF0B61CC19E1D0042A809 /* toms.mp3 */; };
 		5E8BF0BB1CC1A5710042A809 /* AudioMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BF0BA1CC1A5710042A809 /* AudioMixer.m */; };
 		5ED5F8A21CD1633F0070E1AE /* SoundEFXBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8A11CD1633F0070E1AE /* SoundEFXBase.m */; };
 		5ED5F8A51CD1643C0070E1AE /* CatSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8A41CD1643C0070E1AE /* CatSoundEFX.m */; };
@@ -31,6 +28,14 @@
 		5ED5F8B31CD168A10070E1AE /* cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED5F8B11CD168A10070E1AE /* cat.mp3 */; };
 		5ED5F8B41CD168A10070E1AE /* rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED5F8B21CD168A10070E1AE /* rooster.mp3 */; };
 		5ED5F8B61CD169910070E1AE /* bear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED5F8B51CD169910070E1AE /* bear.mp3 */; };
+		5ED5F8B91CD16E170070E1AE /* ChickenSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8B81CD16E170070E1AE /* ChickenSoundEFX.m */; };
+		5ED5F8BC1CD16E500070E1AE /* CowSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8BB1CD16E500070E1AE /* CowSoundEFX.m */; };
+		5ED5F8BF1CD16E8D0070E1AE /* CrowSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8BE1CD16E8D0070E1AE /* CrowSoundEFX.m */; };
+		5ED5F8C21CD16EBE0070E1AE /* DogSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8C11CD16EBE0070E1AE /* DogSoundEFX.m */; };
+		5ED5F8C51CD16EFE0070E1AE /* DuckSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8C41CD16EFE0070E1AE /* DuckSoundEFX.m */; };
+		5ED5F8C81CD16F4C0070E1AE /* EagleSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8C71CD16F4C0070E1AE /* EagleSoundEFX.m */; };
+		5ED5F8CB1CD16F7B0070E1AE /* ElephantSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8CA1CD16F7B0070E1AE /* ElephantSoundEFX.m */; };
+		5ED5F8CE1CD16FAA0070E1AE /* HorseSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8CD1CD16FAA0070E1AE /* HorseSoundEFX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,9 +57,6 @@
 		5E8BF0AD1CC19AA70042A809 /* BJIConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJIConverter.m; sourceTree = "<group>"; };
 		5E8BF0AE1CC19AA70042A809 /* PCMMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCMMixer.h; sourceTree = "<group>"; };
 		5E8BF0AF1CC19AA70042A809 /* PCMMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMMixer.m; sourceTree = "<group>"; };
-		5E8BF0B31CC19E080042A809 /* funk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = funk.mp3; path = AudioEFX/funk.mp3; sourceTree = "<group>"; };
-		5E8BF0B51CC19E1D0042A809 /* tk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tk.mp3; path = AudioEFX/tk.mp3; sourceTree = "<group>"; };
-		5E8BF0B61CC19E1D0042A809 /* toms.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = toms.mp3; path = AudioEFX/toms.mp3; sourceTree = "<group>"; };
 		5E8BF0B91CC1A5710042A809 /* AudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioMixer.h; sourceTree = "<group>"; };
 		5E8BF0BA1CC1A5710042A809 /* AudioMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioMixer.m; sourceTree = "<group>"; };
 		5ED5F8A01CD1633F0070E1AE /* SoundEFXBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundEFXBase.h; path = Base/SoundEFXBase.h; sourceTree = "<group>"; };
@@ -71,6 +73,22 @@
 		5ED5F8B11CD168A10070E1AE /* cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cat.mp3; path = AudioEFX/cat.mp3; sourceTree = "<group>"; };
 		5ED5F8B21CD168A10070E1AE /* rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rooster.mp3; path = AudioEFX/rooster.mp3; sourceTree = "<group>"; };
 		5ED5F8B51CD169910070E1AE /* bear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bear.mp3; path = AudioEFX/bear.mp3; sourceTree = "<group>"; };
+		5ED5F8B71CD16E170070E1AE /* ChickenSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChickenSoundEFX.h; path = Base/ChickenSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8B81CD16E170070E1AE /* ChickenSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChickenSoundEFX.m; path = Base/ChickenSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8BA1CD16E500070E1AE /* CowSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CowSoundEFX.h; path = Base/CowSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8BB1CD16E500070E1AE /* CowSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CowSoundEFX.m; path = Base/CowSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8BD1CD16E8D0070E1AE /* CrowSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CrowSoundEFX.h; path = Base/CrowSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8BE1CD16E8D0070E1AE /* CrowSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CrowSoundEFX.m; path = Base/CrowSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8C01CD16EBE0070E1AE /* DogSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DogSoundEFX.h; path = Base/DogSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8C11CD16EBE0070E1AE /* DogSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DogSoundEFX.m; path = Base/DogSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8C31CD16EFE0070E1AE /* DuckSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DuckSoundEFX.h; path = Base/DuckSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8C41CD16EFE0070E1AE /* DuckSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DuckSoundEFX.m; path = Base/DuckSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8C61CD16F4C0070E1AE /* EagleSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EagleSoundEFX.h; path = Base/EagleSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8C71CD16F4C0070E1AE /* EagleSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EagleSoundEFX.m; path = Base/EagleSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8C91CD16F7B0070E1AE /* ElephantSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElephantSoundEFX.h; path = Base/ElephantSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8CA1CD16F7B0070E1AE /* ElephantSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElephantSoundEFX.m; path = Base/ElephantSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8CC1CD16FAA0070E1AE /* HorseSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HorseSoundEFX.h; path = Base/HorseSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8CD1CD16FAA0070E1AE /* HorseSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HorseSoundEFX.m; path = Base/HorseSoundEFX.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,9 +171,6 @@
 				5ED5F8B11CD168A10070E1AE /* cat.mp3 */,
 				5ED5F8B21CD168A10070E1AE /* rooster.mp3 */,
 				5ED5F8AF1CD168650070E1AE /* bat.mp3 */,
-				5E8BF0B51CC19E1D0042A809 /* tk.mp3 */,
-				5E8BF0B61CC19E1D0042A809 /* toms.mp3 */,
-				5E8BF0B31CC19E080042A809 /* funk.mp3 */,
 			);
 			name = AudioEFX;
 			sourceTree = "<group>";
@@ -173,6 +188,22 @@
 				5ED5F8AA1CD1667B0070E1AE /* RoosterSoundEFX.m */,
 				5ED5F8AC1CD167400070E1AE /* BearSoundEFX.h */,
 				5ED5F8AD1CD167400070E1AE /* BearSoundEFX.m */,
+				5ED5F8B71CD16E170070E1AE /* ChickenSoundEFX.h */,
+				5ED5F8B81CD16E170070E1AE /* ChickenSoundEFX.m */,
+				5ED5F8BA1CD16E500070E1AE /* CowSoundEFX.h */,
+				5ED5F8BB1CD16E500070E1AE /* CowSoundEFX.m */,
+				5ED5F8BD1CD16E8D0070E1AE /* CrowSoundEFX.h */,
+				5ED5F8BE1CD16E8D0070E1AE /* CrowSoundEFX.m */,
+				5ED5F8C01CD16EBE0070E1AE /* DogSoundEFX.h */,
+				5ED5F8C11CD16EBE0070E1AE /* DogSoundEFX.m */,
+				5ED5F8C31CD16EFE0070E1AE /* DuckSoundEFX.h */,
+				5ED5F8C41CD16EFE0070E1AE /* DuckSoundEFX.m */,
+				5ED5F8C61CD16F4C0070E1AE /* EagleSoundEFX.h */,
+				5ED5F8C71CD16F4C0070E1AE /* EagleSoundEFX.m */,
+				5ED5F8C91CD16F7B0070E1AE /* ElephantSoundEFX.h */,
+				5ED5F8CA1CD16F7B0070E1AE /* ElephantSoundEFX.m */,
+				5ED5F8CC1CD16FAA0070E1AE /* HorseSoundEFX.h */,
+				5ED5F8CD1CD16FAA0070E1AE /* HorseSoundEFX.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -235,16 +266,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8BF0B71CC19E1D0042A809 /* tk.mp3 in Resources */,
 				5ED5F8B01CD168650070E1AE /* bat.mp3 in Resources */,
 				5E8BF0A01CC195810042A809 /* LaunchScreen.storyboard in Resources */,
 				5E8BF09D1CC195810042A809 /* Assets.xcassets in Resources */,
 				5ED5F8B41CD168A10070E1AE /* rooster.mp3 in Resources */,
-				5E8BF0B41CC19E080042A809 /* funk.mp3 in Resources */,
 				5ED5F8B61CD169910070E1AE /* bear.mp3 in Resources */,
 				5ED5F8B31CD168A10070E1AE /* cat.mp3 in Resources */,
 				5E8BF09B1CC195810042A809 /* Main.storyboard in Resources */,
-				5E8BF0B81CC19E1D0042A809 /* toms.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,13 +288,21 @@
 				5E8BF0951CC195810042A809 /* AppDelegate.m in Sources */,
 				5E8BF0B11CC19AA70042A809 /* PCMMixer.m in Sources */,
 				5ED5F8A51CD1643C0070E1AE /* CatSoundEFX.m in Sources */,
+				5ED5F8B91CD16E170070E1AE /* ChickenSoundEFX.m in Sources */,
 				5ED5F8A81CD1659D0070E1AE /* BatSoundEFX.m in Sources */,
+				5ED5F8CE1CD16FAA0070E1AE /* HorseSoundEFX.m in Sources */,
+				5ED5F8C51CD16EFE0070E1AE /* DuckSoundEFX.m in Sources */,
+				5ED5F8C81CD16F4C0070E1AE /* EagleSoundEFX.m in Sources */,
 				5E8BF0B01CC19AA70042A809 /* BJIConverter.m in Sources */,
+				5ED5F8BF1CD16E8D0070E1AE /* CrowSoundEFX.m in Sources */,
 				5ED5F8AE1CD167400070E1AE /* BearSoundEFX.m in Sources */,
 				5E8BF0BB1CC1A5710042A809 /* AudioMixer.m in Sources */,
 				5ED5F8AB1CD1667B0070E1AE /* RoosterSoundEFX.m in Sources */,
+				5ED5F8BC1CD16E500070E1AE /* CowSoundEFX.m in Sources */,
 				5E8BF0921CC195810042A809 /* main.m in Sources */,
+				5ED5F8C21CD16EBE0070E1AE /* DogSoundEFX.m in Sources */,
 				5E03CD571CC593E00038BC2A /* Recorder.m in Sources */,
+				5ED5F8CB1CD16F7B0070E1AE /* ElephantSoundEFX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
