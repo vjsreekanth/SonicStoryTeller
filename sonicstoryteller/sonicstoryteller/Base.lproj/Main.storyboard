@@ -248,7 +248,7 @@
                                                     <constraint firstAttribute="width" constant="50" id="CDI-wm-i6c"/>
                                                     <constraint firstAttribute="height" constant="50" id="vjz-BP-KJO"/>
                                                 </constraints>
-                                                <state key="normal" image="pig"/>
+                                                <state key="normal" image="scary"/>
                                                 <connections>
                                                     <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDf-2N-bX7"/>
                                                 </connections>
@@ -259,7 +259,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="D1O-fP-Ssr"/>
                                                     <constraint firstAttribute="width" constant="50" id="vVn-ZN-Vwr"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="sea"/>
                                                 <connections>
                                                     <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cGG-KP-Sog"/>
                                                 </connections>
@@ -336,7 +336,7 @@
                                                     <constraint firstAttribute="width" constant="50" id="3hx-rP-Pfp"/>
                                                     <constraint firstAttribute="height" constant="50" id="mAy-oF-BvV"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="ufo"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPs-Wp-ADW">
                                                 <rect key="frame" x="414" y="124" width="50" height="50"/>
@@ -344,7 +344,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="cWs-uS-EaY"/>
                                                     <constraint firstAttribute="width" constant="50" id="ulN-fN-ADe"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="night"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WQ-tY-1Yd">
                                                 <rect key="frame" x="472" y="124" width="50" height="50"/>
@@ -352,7 +352,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="E7C-TZ-2TG"/>
                                                     <constraint firstAttribute="width" constant="50" id="LNx-UQ-2ol"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="suspense"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1h-gc-kYL">
                                                 <rect key="frame" x="8" y="182" width="50" height="50"/>
@@ -360,7 +360,7 @@
                                                     <constraint firstAttribute="width" constant="50" id="9wM-80-v3y"/>
                                                     <constraint firstAttribute="height" constant="50" id="eq4-1C-n1U"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="fire"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tE-qN-snl">
                                                 <rect key="frame" x="66" y="182" width="50" height="50"/>
@@ -368,7 +368,7 @@
                                                     <constraint firstAttribute="width" constant="50" id="KwF-w9-SNR"/>
                                                     <constraint firstAttribute="height" constant="50" id="e5c-xA-Hft"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="explosion"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-lY-dPc">
                                                 <rect key="frame" x="124" y="182" width="50" height="50"/>
@@ -376,7 +376,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="LXA-Ni-MuR"/>
                                                     <constraint firstAttribute="width" constant="50" id="yRh-q5-p0Y"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="jungle"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUW-sx-Mw9">
                                                 <rect key="frame" x="182" y="182" width="50" height="50"/>
@@ -384,7 +384,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="I8Y-Sr-7X8"/>
                                                     <constraint firstAttribute="width" constant="50" id="iCU-Om-AtQ"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="powerup"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-v7-AXu">
                                                 <rect key="frame" x="240" y="182" width="50" height="50"/>
@@ -637,6 +637,7 @@
                         <outlet property="btnThunder" destination="FLG-pQ-Kqq" id="CSM-7R-hfo"/>
                         <outlet property="btnTrain" destination="rqo-ol-1uW" id="ujx-6b-Nov"/>
                         <outlet property="btnWind" destination="pRh-E3-wf4" id="jwK-kD-y8I"/>
+                        <outlet property="scrollViewTop" destination="IzQ-ci-izh" id="xQX-P7-Wwz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -656,19 +657,27 @@
         <image name="duck" width="120" height="120"/>
         <image name="eagle" width="120" height="120"/>
         <image name="elephant" width="120" height="120"/>
+        <image name="explosion" width="120" height="120"/>
+        <image name="fire" width="120" height="120"/>
         <image name="horse" width="120" height="120"/>
+        <image name="jungle" width="120" height="120"/>
         <image name="lion" width="120" height="120"/>
         <image name="monkey" width="120" height="120"/>
+        <image name="night" width="120" height="120"/>
         <image name="owl" width="120" height="120"/>
-        <image name="pig" width="120" height="120"/>
         <image name="play" width="120" height="120"/>
+        <image name="powerup" width="120" height="120"/>
         <image name="rain" width="120" height="120"/>
         <image name="record" width="120" height="120"/>
         <image name="river" width="120" height="120"/>
         <image name="rooster" width="120" height="120"/>
+        <image name="scary" width="120" height="120"/>
+        <image name="sea" width="120" height="120"/>
         <image name="stop" width="120" height="120"/>
+        <image name="suspense" width="120" height="120"/>
         <image name="thunder" width="120" height="120"/>
         <image name="train" width="120" height="120"/>
+        <image name="ufo" width="120" height="120"/>
         <image name="wind" width="120" height="120"/>
     </resources>
 </document>

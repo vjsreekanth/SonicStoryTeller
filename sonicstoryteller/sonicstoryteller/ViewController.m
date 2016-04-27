@@ -8,6 +8,11 @@
 
 #import "ViewController.h"
 #import "Recorder.h"
+#import "SoundEFXBase.h"
+#import "CatSoundEFX.h"
+#import "BatSoundEFX.h"
+#import "RoosterSoundEFX.h"
+#import "BearSoundEFX.h"
 
 @interface ViewController ()
 
@@ -34,6 +39,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnCar;
 @property (weak, nonatomic) IBOutlet UIButton *btnTrain;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollViewTop;
+
 @end
 
 @implementation ViewController
@@ -51,21 +58,23 @@
 
 - (IBAction)btnSoundTapped:(UIButton *)btn
 {
+    SoundEFXBase *soundEFX;
+    
     if (btn == self.btnBat)
     {
-        NSLog(@"bat");
+        soundEFX = [[BatSoundEFX alloc]init];
     }
     else if (btn == self.btnBear)
     {
-        NSLog(@"bear");
+        soundEFX = [[BearSoundEFX alloc]init];
     }
     else if (btn == self.btnRooster)
     {
-        NSLog(@"rooster");
+        soundEFX = [[RoosterSoundEFX alloc]init];
     }
     else if (btn == self.btnCat)
     {
-        NSLog(@"cat");
+        soundEFX = [[CatSoundEFX alloc]init];
     }
     else if (btn == self.btnChicken)
     {
@@ -139,6 +148,11 @@
     {
         NSLog(@"train");
     }
+    
+    soundEFX.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [soundEFX.imageView setImage:btn.imageView.image];
+    [self.scrollViewTop addSubview:soundEFX.imageView];
+
 }
 
 

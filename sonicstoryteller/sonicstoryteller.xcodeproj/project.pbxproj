@@ -22,6 +22,15 @@
 		5E8BF0B71CC19E1D0042A809 /* tk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E8BF0B51CC19E1D0042A809 /* tk.mp3 */; };
 		5E8BF0B81CC19E1D0042A809 /* toms.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E8BF0B61CC19E1D0042A809 /* toms.mp3 */; };
 		5E8BF0BB1CC1A5710042A809 /* AudioMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BF0BA1CC1A5710042A809 /* AudioMixer.m */; };
+		5ED5F8A21CD1633F0070E1AE /* SoundEFXBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8A11CD1633F0070E1AE /* SoundEFXBase.m */; };
+		5ED5F8A51CD1643C0070E1AE /* CatSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8A41CD1643C0070E1AE /* CatSoundEFX.m */; };
+		5ED5F8A81CD1659D0070E1AE /* BatSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8A71CD1659D0070E1AE /* BatSoundEFX.m */; };
+		5ED5F8AB1CD1667B0070E1AE /* RoosterSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8AA1CD1667B0070E1AE /* RoosterSoundEFX.m */; };
+		5ED5F8AE1CD167400070E1AE /* BearSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8AD1CD167400070E1AE /* BearSoundEFX.m */; };
+		5ED5F8B01CD168650070E1AE /* bat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED5F8AF1CD168650070E1AE /* bat.mp3 */; };
+		5ED5F8B31CD168A10070E1AE /* cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED5F8B11CD168A10070E1AE /* cat.mp3 */; };
+		5ED5F8B41CD168A10070E1AE /* rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED5F8B21CD168A10070E1AE /* rooster.mp3 */; };
+		5ED5F8B61CD169910070E1AE /* bear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED5F8B51CD169910070E1AE /* bear.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +57,20 @@
 		5E8BF0B61CC19E1D0042A809 /* toms.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = toms.mp3; path = AudioEFX/toms.mp3; sourceTree = "<group>"; };
 		5E8BF0B91CC1A5710042A809 /* AudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioMixer.h; sourceTree = "<group>"; };
 		5E8BF0BA1CC1A5710042A809 /* AudioMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioMixer.m; sourceTree = "<group>"; };
+		5ED5F8A01CD1633F0070E1AE /* SoundEFXBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundEFXBase.h; path = Base/SoundEFXBase.h; sourceTree = "<group>"; };
+		5ED5F8A11CD1633F0070E1AE /* SoundEFXBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoundEFXBase.m; path = Base/SoundEFXBase.m; sourceTree = "<group>"; };
+		5ED5F8A31CD1643C0070E1AE /* CatSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CatSoundEFX.h; path = Base/CatSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8A41CD1643C0070E1AE /* CatSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CatSoundEFX.m; path = Base/CatSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8A61CD1659D0070E1AE /* BatSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BatSoundEFX.h; path = Base/BatSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8A71CD1659D0070E1AE /* BatSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BatSoundEFX.m; path = Base/BatSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8A91CD1667B0070E1AE /* RoosterSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoosterSoundEFX.h; path = Base/RoosterSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8AA1CD1667B0070E1AE /* RoosterSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoosterSoundEFX.m; path = Base/RoosterSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8AC1CD167400070E1AE /* BearSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BearSoundEFX.h; path = Base/BearSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8AD1CD167400070E1AE /* BearSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BearSoundEFX.m; path = Base/BearSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8AF1CD168650070E1AE /* bat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bat.mp3; path = AudioEFX/bat.mp3; sourceTree = "<group>"; };
+		5ED5F8B11CD168A10070E1AE /* cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cat.mp3; path = AudioEFX/cat.mp3; sourceTree = "<group>"; };
+		5ED5F8B21CD168A10070E1AE /* rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rooster.mp3; path = AudioEFX/rooster.mp3; sourceTree = "<group>"; };
+		5ED5F8B51CD169910070E1AE /* bear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bear.mp3; path = AudioEFX/bear.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +107,7 @@
 		5E8BF08F1CC195810042A809 /* sonicstoryteller */ = {
 			isa = PBXGroup;
 			children = (
+				5ED5F89F1CD162BD0070E1AE /* Base */,
 				5E8BF0B21CC19DB40042A809 /* AudioEFX */,
 				5E8BF0AB1CC19A7F0042A809 /* Helpers */,
 				5E8BF0931CC195810042A809 /* AppDelegate.h */,
@@ -125,11 +149,32 @@
 		5E8BF0B21CC19DB40042A809 /* AudioEFX */ = {
 			isa = PBXGroup;
 			children = (
+				5ED5F8B51CD169910070E1AE /* bear.mp3 */,
+				5ED5F8B11CD168A10070E1AE /* cat.mp3 */,
+				5ED5F8B21CD168A10070E1AE /* rooster.mp3 */,
+				5ED5F8AF1CD168650070E1AE /* bat.mp3 */,
 				5E8BF0B51CC19E1D0042A809 /* tk.mp3 */,
 				5E8BF0B61CC19E1D0042A809 /* toms.mp3 */,
 				5E8BF0B31CC19E080042A809 /* funk.mp3 */,
 			);
 			name = AudioEFX;
+			sourceTree = "<group>";
+		};
+		5ED5F89F1CD162BD0070E1AE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5ED5F8A01CD1633F0070E1AE /* SoundEFXBase.h */,
+				5ED5F8A11CD1633F0070E1AE /* SoundEFXBase.m */,
+				5ED5F8A31CD1643C0070E1AE /* CatSoundEFX.h */,
+				5ED5F8A41CD1643C0070E1AE /* CatSoundEFX.m */,
+				5ED5F8A61CD1659D0070E1AE /* BatSoundEFX.h */,
+				5ED5F8A71CD1659D0070E1AE /* BatSoundEFX.m */,
+				5ED5F8A91CD1667B0070E1AE /* RoosterSoundEFX.h */,
+				5ED5F8AA1CD1667B0070E1AE /* RoosterSoundEFX.m */,
+				5ED5F8AC1CD167400070E1AE /* BearSoundEFX.h */,
+				5ED5F8AD1CD167400070E1AE /* BearSoundEFX.m */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +236,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E8BF0B71CC19E1D0042A809 /* tk.mp3 in Resources */,
+				5ED5F8B01CD168650070E1AE /* bat.mp3 in Resources */,
 				5E8BF0A01CC195810042A809 /* LaunchScreen.storyboard in Resources */,
 				5E8BF09D1CC195810042A809 /* Assets.xcassets in Resources */,
+				5ED5F8B41CD168A10070E1AE /* rooster.mp3 in Resources */,
 				5E8BF0B41CC19E080042A809 /* funk.mp3 in Resources */,
+				5ED5F8B61CD169910070E1AE /* bear.mp3 in Resources */,
+				5ED5F8B31CD168A10070E1AE /* cat.mp3 in Resources */,
 				5E8BF09B1CC195810042A809 /* Main.storyboard in Resources */,
 				5E8BF0B81CC19E1D0042A809 /* toms.mp3 in Resources */,
 			);
@@ -206,11 +255,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED5F8A21CD1633F0070E1AE /* SoundEFXBase.m in Sources */,
 				5E8BF0981CC195810042A809 /* ViewController.m in Sources */,
 				5E8BF0951CC195810042A809 /* AppDelegate.m in Sources */,
 				5E8BF0B11CC19AA70042A809 /* PCMMixer.m in Sources */,
+				5ED5F8A51CD1643C0070E1AE /* CatSoundEFX.m in Sources */,
+				5ED5F8A81CD1659D0070E1AE /* BatSoundEFX.m in Sources */,
 				5E8BF0B01CC19AA70042A809 /* BJIConverter.m in Sources */,
+				5ED5F8AE1CD167400070E1AE /* BearSoundEFX.m in Sources */,
 				5E8BF0BB1CC1A5710042A809 /* AudioMixer.m in Sources */,
+				5ED5F8AB1CD1667B0070E1AE /* RoosterSoundEFX.m in Sources */,
 				5E8BF0921CC195810042A809 /* main.m in Sources */,
 				5E03CD571CC593E00038BC2A /* Recorder.m in Sources */,
 			);
