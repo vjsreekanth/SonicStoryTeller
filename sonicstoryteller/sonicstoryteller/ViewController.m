@@ -39,7 +39,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnCar;
 @property (weak, nonatomic) IBOutlet UIButton *btnTrain;
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollViewTop;
+@property (weak, nonatomic) IBOutlet UIView *screenView;
+
 
 @end
 
@@ -149,9 +150,9 @@
         NSLog(@"train");
     }
     
-    soundEFX.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    soundEFX.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 100, 50, 50)];
     [soundEFX.imageView setImage:btn.imageView.image];
-    [self.scrollViewTop addSubview:soundEFX.imageView];
+    [self.screenView addSubview:soundEFX.imageView];
 
 }
 
