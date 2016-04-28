@@ -55,6 +55,7 @@
 		5ED5F9011CD182880070E1AE /* JungleSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F9001CD182880070E1AE /* JungleSoundEFX.m */; };
 		5ED5F9041CD182C70070E1AE /* PowerupSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F9031CD182C70070E1AE /* PowerupSoundEFX.m */; };
 		5EFD91901CD2B37D00A63A24 /* PigSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD918F1CD2B37D00A63A24 /* PigSoundEFX.m */; };
+		5EFD91931CD2CDA300A63A24 /* DoorSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD91921CD2CDA300A63A24 /* DoorSoundEFX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +147,8 @@
 		5ED5F9031CD182C70070E1AE /* PowerupSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PowerupSoundEFX.m; path = Base/PowerupSoundEFX.m; sourceTree = "<group>"; };
 		5EFD918E1CD2B37D00A63A24 /* PigSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PigSoundEFX.h; path = Base/PigSoundEFX.h; sourceTree = "<group>"; };
 		5EFD918F1CD2B37D00A63A24 /* PigSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PigSoundEFX.m; path = Base/PigSoundEFX.m; sourceTree = "<group>"; };
+		5EFD91911CD2CDA300A63A24 /* DoorSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoorSoundEFX.h; path = Base/DoorSoundEFX.h; sourceTree = "<group>"; };
+		5EFD91921CD2CDA300A63A24 /* DoorSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoorSoundEFX.m; path = Base/DoorSoundEFX.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +302,8 @@
 				5ED5F9031CD182C70070E1AE /* PowerupSoundEFX.m */,
 				5EFD918E1CD2B37D00A63A24 /* PigSoundEFX.h */,
 				5EFD918F1CD2B37D00A63A24 /* PigSoundEFX.m */,
+				5EFD91911CD2CDA300A63A24 /* DoorSoundEFX.h */,
+				5EFD91921CD2CDA300A63A24 /* DoorSoundEFX.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -395,6 +400,7 @@
 				5ED5F8CE1CD16FAA0070E1AE /* HorseSoundEFX.m in Sources */,
 				5ED5F8E91CD181070070E1AE /* RainSoundEFX.m in Sources */,
 				5ED5F8C51CD16EFE0070E1AE /* DuckSoundEFX.m in Sources */,
+				5EFD91931CD2CDA300A63A24 /* DoorSoundEFX.m in Sources */,
 				5ED5F8D41CD17EAF0070E1AE /* MonkeySoundEFX.m in Sources */,
 				5ED5F8C81CD16F4C0070E1AE /* EagleSoundEFX.m in Sources */,
 				5ED5F8DD1CD17FB40070E1AE /* SeaSoundEFX.m in Sources */,
