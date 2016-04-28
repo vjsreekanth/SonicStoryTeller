@@ -99,126 +99,161 @@
 
 - (IBAction)btnSoundTapped:(UIButton *)btn
 {
+    SoundEFXBase *soundEFXBase;
+    NSString *soundStringKey;
+    
     if (btn == self.btnBat)
     {
-        [self.dicSoundEFX setObject:[BatSoundEFX new] forKey:@"bat"];
+        soundEFXBase = [BatSoundEFX new];
+        soundStringKey = @"bat";
     }
     else if (btn == self.btnBear)
     {
-        [self.dicSoundEFX setObject:[BearSoundEFX new] forKey:@"bear"];
+        soundEFXBase = [BearSoundEFX new];
+        soundStringKey = @"bear";
     }
     else if (btn == self.btnChicken)
     {
-        [self.dicSoundEFX setObject:[ChickenSoundEFX new] forKey:@"chicken"];
+        soundEFXBase = [ChickenSoundEFX new];
+        soundStringKey = @"chicken";
     }
     else if (btn == self.btnRooster)
     {
-        [self.dicSoundEFX setObject:[RoosterSoundEFX new] forKey:@"rooster"];
+        soundEFXBase = [RoosterSoundEFX new];
+        soundStringKey = @"rooster";
     }
     else if (btn == self.btnCat)
     {
-        [self.dicSoundEFX setObject:[CatSoundEFX new] forKey:@"cat"];
+        soundEFXBase = [CatSoundEFX new];
+        soundStringKey = @"cat";
     }
     else if (btn == self.btnElephant)
     {
-        [self.dicSoundEFX setObject:[ElephantSoundEFX new] forKey:@"elephant"];
+        soundEFXBase = [ElephantSoundEFX new];
+        soundStringKey = @"elephant";
     }
     else if (btn == self.btnCow)
     {
-        [self.dicSoundEFX setObject:[CowSoundEFX new] forKey:@"cow"];
+        soundEFXBase = [CowSoundEFX new];
+        soundStringKey = @"cow";
     }
     else if (btn == self.btnCrow)
     {
-        [self.dicSoundEFX setObject:[CrowSoundEFX new] forKey:@"crow"];
+        soundEFXBase = [CrowSoundEFX new];
+        soundStringKey = @"crow";
     }
     else if (btn == self.btnDog)
     {
-        [self.dicSoundEFX setObject:[DogSoundEFX new] forKey:@"dog"];
+        soundEFXBase = [DogSoundEFX new];
+        soundStringKey = @"dog";
     }
     else if (btn == self.btnDuck)
     {
-        [self.dicSoundEFX setObject:[DuckSoundEFX new] forKey:@"duck"];
+        soundEFXBase = [DuckSoundEFX new];
+        soundStringKey = @"duck";
     }
     else if (btn == self.btnPig)
     {
-        [self.dicSoundEFX setObject:[PigSoundEFX new] forKey:@"pig"];
+        soundEFXBase = [PigSoundEFX new] ;
+        soundStringKey = @"pig";
     }
     else if (btn == self.btnOwl)
     {
-        [self.dicSoundEFX setObject:[OwlSoundEFX new] forKey:@"owl"];
+        soundEFXBase = [OwlSoundEFX new] ;
+        soundStringKey = @"owl";
     }
     else if (btn == self.btnMonkey)
     {
-        [self.dicSoundEFX setObject:[MonkeySoundEFX new] forKey:@"monkey"];
+        soundEFXBase = [MonkeySoundEFX new] ;
+        soundStringKey = @"monkey";
     }
     else if (btn == self.btnLion)
     {
-        [self.dicSoundEFX setObject:[LionSoundEFX new] forKey:@"lion"];
+        soundEFXBase = [LionSoundEFX new];
+        soundStringKey = @"lion";
     }
     else if (btn == self.btnHorse)
     {
-        [self.dicSoundEFX setObject:[HorseSoundEFX new] forKey:@"horse"];
+        soundEFXBase = [HorseSoundEFX new];
+        soundStringKey = @"horse";
     }
     else if (btn == self.btnEagle)
     {
-        [self.dicSoundEFX setObject:[EagleSoundEFX new] forKey:@"eagle"];
+        soundEFXBase = [EagleSoundEFX new];
+        soundStringKey = @"eagle";
     }
     else if (btn == self.btnCar)
     {
-        [self.dicSoundEFX setObject:[CarSoundEFX new] forKey:@"car"];
+        soundEFXBase = [CarSoundEFX new];
+        soundStringKey = @"car";
     }
     else if (btn == self.btnTrain)
     {
-        [self.dicSoundEFX setObject:[TrainSoundEFX new] forKey:@"train"];
+        soundEFXBase = [TrainSoundEFX new];
+        soundStringKey = @"train";
     }
     else if (btn == self.btnUfo)
     {
-        [self.dicSoundEFX setObject:[UfoSoundEFX new] forKey:@"ufo"];
+        soundEFXBase = [UfoSoundEFX new];
+        soundStringKey = @"ufo";
     }
     else if (btn == self.btnDoor)
     {
-        [self.dicSoundEFX setObject:[DoorSoundEFX new] forKey:@"door"];
+        soundEFXBase = [DoorSoundEFX new];
+        soundStringKey = @"door";
     }
     else if (btn == self.btnFire)
     {
-        [self.dicSoundEFX setObject:[FireSoundEFX new] forKey:@"fire"];
+        soundEFXBase = [FireSoundEFX new];
+        soundStringKey = @"fire";
     }
     else if (btn == self.btnExplosion)
     {
-        [self.dicSoundEFX setObject:[ExplosionSoundEFX new] forKey:@"explosion"];
+        soundEFXBase = [ExplosionSoundEFX new];
+        soundStringKey = @"explosion";
     }
     else if (btn == self.btnPowerup)
     {
-        [self.dicSoundEFX setObject:[PowerupSoundEFX new] forKey:@"powerup"];
+        soundEFXBase = [PowerupSoundEFX new];
+        soundStringKey = @"powerup";
     }
     else if (btn == self.btnSea)
     {
-        [self.dicSoundEFX setObject:[SeaSoundEFX new] forKey:@"sea"];
+        soundEFXBase = [SeaSoundEFX new];
+        soundStringKey = @"sea";
     }
     else if (btn == self.btnRiver)
     {
-        [self.dicSoundEFX setObject:[RiverSoundEFX new] forKey:@"river"];
+        soundEFXBase = [RiverSoundEFX new];
+        soundStringKey = @"river";
     }
     else if (btn == self.btnRain)
     {
-        [self.dicSoundEFX setObject:[RainSoundEFX new] forKey:@"rain"];
+        soundEFXBase = [RainSoundEFX new];
+        soundStringKey = @"rain";
     }
     else if (btn == self.btnThunder)
     {
-        [self.dicSoundEFX setObject:[ThunderSoundEFX new] forKey:@"thunder"];
+        soundEFXBase = [ThunderSoundEFX new];
+        soundStringKey = @"thunder";
     }
     else if (btn == self.btnWind)
     {
-        [self.dicSoundEFX setObject:[WindSoundEFX new] forKey:@"wind"];
+        soundEFXBase = [WindSoundEFX new];
+        soundStringKey = @"wind";
     }
     else if (btn == self.btnScary)
     {
-        [self.dicSoundEFX setObject:[ScarySoundEFX new] forKey:@"scary"];
+        soundEFXBase = [ScarySoundEFX new];
+        soundStringKey = @"scary";
     }
     else if (btn == self.btnSuspense)
     {
-        [self.dicSoundEFX setObject:[SuspenseSoundEFX new] forKey:@"suspense"];
+        soundEFXBase = [SuspenseSoundEFX new];
+        soundStringKey = @"suspense";
     }
+    
+    [self.dicSoundEFX setObject:soundEFXBase forKey:soundStringKey];
 }
 
 
