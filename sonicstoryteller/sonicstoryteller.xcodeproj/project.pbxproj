@@ -36,6 +36,25 @@
 		5ED5F8C81CD16F4C0070E1AE /* EagleSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8C71CD16F4C0070E1AE /* EagleSoundEFX.m */; };
 		5ED5F8CB1CD16F7B0070E1AE /* ElephantSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8CA1CD16F7B0070E1AE /* ElephantSoundEFX.m */; };
 		5ED5F8CE1CD16FAA0070E1AE /* HorseSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8CD1CD16FAA0070E1AE /* HorseSoundEFX.m */; };
+		5ED5F8D11CD17E790070E1AE /* LionSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8D01CD17E790070E1AE /* LionSoundEFX.m */; };
+		5ED5F8D41CD17EAF0070E1AE /* MonkeySoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8D31CD17EAF0070E1AE /* MonkeySoundEFX.m */; };
+		5ED5F8D71CD17F2B0070E1AE /* OwlSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8D61CD17F2B0070E1AE /* OwlSoundEFX.m */; };
+		5ED5F8DA1CD17F5E0070E1AE /* ScarySoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8D91CD17F5E0070E1AE /* ScarySoundEFX.m */; };
+		5ED5F8DD1CD17FB40070E1AE /* SeaSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8DC1CD17FB40070E1AE /* SeaSoundEFX.m */; };
+		5ED5F8E01CD180000070E1AE /* RiverSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8DF1CD180000070E1AE /* RiverSoundEFX.m */; };
+		5ED5F8E31CD180B50070E1AE /* WindSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8E21CD180B50070E1AE /* WindSoundEFX.m */; };
+		5ED5F8E61CD180E50070E1AE /* ThunderSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8E51CD180E50070E1AE /* ThunderSoundEFX.m */; };
+		5ED5F8E91CD181070070E1AE /* RainSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8E81CD181070070E1AE /* RainSoundEFX.m */; };
+		5ED5F8EC1CD1812B0070E1AE /* CarSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8EB1CD1812B0070E1AE /* CarSoundEFX.m */; };
+		5ED5F8EF1CD181880070E1AE /* TrainSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8EE1CD181880070E1AE /* TrainSoundEFX.m */; };
+		5ED5F8F21CD181B50070E1AE /* UfoSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8F11CD181B50070E1AE /* UfoSoundEFX.m */; };
+		5ED5F8F51CD181D90070E1AE /* NightSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8F41CD181D90070E1AE /* NightSoundEFX.m */; };
+		5ED5F8F81CD181FA0070E1AE /* SuspenseSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8F71CD181FA0070E1AE /* SuspenseSoundEFX.m */; };
+		5ED5F8FB1CD1822E0070E1AE /* FireSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8FA1CD1822E0070E1AE /* FireSoundEFX.m */; };
+		5ED5F8FE1CD182520070E1AE /* ExplosionSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F8FD1CD182520070E1AE /* ExplosionSoundEFX.m */; };
+		5ED5F9011CD182880070E1AE /* JungleSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F9001CD182880070E1AE /* JungleSoundEFX.m */; };
+		5ED5F9041CD182C70070E1AE /* PowerupSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5F9031CD182C70070E1AE /* PowerupSoundEFX.m */; };
+		5EFD91901CD2B37D00A63A24 /* PigSoundEFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD918F1CD2B37D00A63A24 /* PigSoundEFX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +108,44 @@
 		5ED5F8CA1CD16F7B0070E1AE /* ElephantSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElephantSoundEFX.m; path = Base/ElephantSoundEFX.m; sourceTree = "<group>"; };
 		5ED5F8CC1CD16FAA0070E1AE /* HorseSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HorseSoundEFX.h; path = Base/HorseSoundEFX.h; sourceTree = "<group>"; };
 		5ED5F8CD1CD16FAA0070E1AE /* HorseSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HorseSoundEFX.m; path = Base/HorseSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8CF1CD17E790070E1AE /* LionSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LionSoundEFX.h; path = Base/LionSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8D01CD17E790070E1AE /* LionSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LionSoundEFX.m; path = Base/LionSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8D21CD17EAF0070E1AE /* MonkeySoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonkeySoundEFX.h; path = Base/MonkeySoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8D31CD17EAF0070E1AE /* MonkeySoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MonkeySoundEFX.m; path = Base/MonkeySoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8D51CD17F2B0070E1AE /* OwlSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OwlSoundEFX.h; path = Base/OwlSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8D61CD17F2B0070E1AE /* OwlSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OwlSoundEFX.m; path = Base/OwlSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8D81CD17F5E0070E1AE /* ScarySoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScarySoundEFX.h; path = Base/ScarySoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8D91CD17F5E0070E1AE /* ScarySoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScarySoundEFX.m; path = Base/ScarySoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8DB1CD17FB40070E1AE /* SeaSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeaSoundEFX.h; path = Base/SeaSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8DC1CD17FB40070E1AE /* SeaSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeaSoundEFX.m; path = Base/SeaSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8DE1CD180000070E1AE /* RiverSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RiverSoundEFX.h; path = Base/RiverSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8DF1CD180000070E1AE /* RiverSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RiverSoundEFX.m; path = Base/RiverSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8E11CD180B50070E1AE /* WindSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WindSoundEFX.h; path = Base/WindSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8E21CD180B50070E1AE /* WindSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WindSoundEFX.m; path = Base/WindSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8E41CD180E50070E1AE /* ThunderSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThunderSoundEFX.h; path = Base/ThunderSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8E51CD180E50070E1AE /* ThunderSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThunderSoundEFX.m; path = Base/ThunderSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8E71CD181070070E1AE /* RainSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RainSoundEFX.h; path = Base/RainSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8E81CD181070070E1AE /* RainSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RainSoundEFX.m; path = Base/RainSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8EA1CD1812B0070E1AE /* CarSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarSoundEFX.h; path = Base/CarSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8EB1CD1812B0070E1AE /* CarSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarSoundEFX.m; path = Base/CarSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8ED1CD181880070E1AE /* TrainSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrainSoundEFX.h; path = Base/TrainSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8EE1CD181880070E1AE /* TrainSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrainSoundEFX.m; path = Base/TrainSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8F01CD181B50070E1AE /* UfoSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UfoSoundEFX.h; path = Base/UfoSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8F11CD181B50070E1AE /* UfoSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UfoSoundEFX.m; path = Base/UfoSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8F31CD181D90070E1AE /* NightSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NightSoundEFX.h; path = Base/NightSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8F41CD181D90070E1AE /* NightSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NightSoundEFX.m; path = Base/NightSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8F61CD181FA0070E1AE /* SuspenseSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuspenseSoundEFX.h; path = Base/SuspenseSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8F71CD181FA0070E1AE /* SuspenseSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuspenseSoundEFX.m; path = Base/SuspenseSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8F91CD1822E0070E1AE /* FireSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FireSoundEFX.h; path = Base/FireSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8FA1CD1822E0070E1AE /* FireSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FireSoundEFX.m; path = Base/FireSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8FC1CD182520070E1AE /* ExplosionSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExplosionSoundEFX.h; path = Base/ExplosionSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F8FD1CD182520070E1AE /* ExplosionSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExplosionSoundEFX.m; path = Base/ExplosionSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F8FF1CD182880070E1AE /* JungleSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JungleSoundEFX.h; path = Base/JungleSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F9001CD182880070E1AE /* JungleSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JungleSoundEFX.m; path = Base/JungleSoundEFX.m; sourceTree = "<group>"; };
+		5ED5F9021CD182C70070E1AE /* PowerupSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PowerupSoundEFX.h; path = Base/PowerupSoundEFX.h; sourceTree = "<group>"; };
+		5ED5F9031CD182C70070E1AE /* PowerupSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PowerupSoundEFX.m; path = Base/PowerupSoundEFX.m; sourceTree = "<group>"; };
+		5EFD918E1CD2B37D00A63A24 /* PigSoundEFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PigSoundEFX.h; path = Base/PigSoundEFX.h; sourceTree = "<group>"; };
+		5EFD918F1CD2B37D00A63A24 /* PigSoundEFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PigSoundEFX.m; path = Base/PigSoundEFX.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +261,44 @@
 				5ED5F8CA1CD16F7B0070E1AE /* ElephantSoundEFX.m */,
 				5ED5F8CC1CD16FAA0070E1AE /* HorseSoundEFX.h */,
 				5ED5F8CD1CD16FAA0070E1AE /* HorseSoundEFX.m */,
+				5ED5F8CF1CD17E790070E1AE /* LionSoundEFX.h */,
+				5ED5F8D01CD17E790070E1AE /* LionSoundEFX.m */,
+				5ED5F8D21CD17EAF0070E1AE /* MonkeySoundEFX.h */,
+				5ED5F8D31CD17EAF0070E1AE /* MonkeySoundEFX.m */,
+				5ED5F8D51CD17F2B0070E1AE /* OwlSoundEFX.h */,
+				5ED5F8D61CD17F2B0070E1AE /* OwlSoundEFX.m */,
+				5ED5F8D81CD17F5E0070E1AE /* ScarySoundEFX.h */,
+				5ED5F8D91CD17F5E0070E1AE /* ScarySoundEFX.m */,
+				5ED5F8DB1CD17FB40070E1AE /* SeaSoundEFX.h */,
+				5ED5F8DC1CD17FB40070E1AE /* SeaSoundEFX.m */,
+				5ED5F8DE1CD180000070E1AE /* RiverSoundEFX.h */,
+				5ED5F8DF1CD180000070E1AE /* RiverSoundEFX.m */,
+				5ED5F8E11CD180B50070E1AE /* WindSoundEFX.h */,
+				5ED5F8E21CD180B50070E1AE /* WindSoundEFX.m */,
+				5ED5F8E41CD180E50070E1AE /* ThunderSoundEFX.h */,
+				5ED5F8E51CD180E50070E1AE /* ThunderSoundEFX.m */,
+				5ED5F8E71CD181070070E1AE /* RainSoundEFX.h */,
+				5ED5F8E81CD181070070E1AE /* RainSoundEFX.m */,
+				5ED5F8EA1CD1812B0070E1AE /* CarSoundEFX.h */,
+				5ED5F8EB1CD1812B0070E1AE /* CarSoundEFX.m */,
+				5ED5F8ED1CD181880070E1AE /* TrainSoundEFX.h */,
+				5ED5F8EE1CD181880070E1AE /* TrainSoundEFX.m */,
+				5ED5F8F01CD181B50070E1AE /* UfoSoundEFX.h */,
+				5ED5F8F11CD181B50070E1AE /* UfoSoundEFX.m */,
+				5ED5F8F31CD181D90070E1AE /* NightSoundEFX.h */,
+				5ED5F8F41CD181D90070E1AE /* NightSoundEFX.m */,
+				5ED5F8F61CD181FA0070E1AE /* SuspenseSoundEFX.h */,
+				5ED5F8F71CD181FA0070E1AE /* SuspenseSoundEFX.m */,
+				5ED5F8F91CD1822E0070E1AE /* FireSoundEFX.h */,
+				5ED5F8FA1CD1822E0070E1AE /* FireSoundEFX.m */,
+				5ED5F8FC1CD182520070E1AE /* ExplosionSoundEFX.h */,
+				5ED5F8FD1CD182520070E1AE /* ExplosionSoundEFX.m */,
+				5ED5F8FF1CD182880070E1AE /* JungleSoundEFX.h */,
+				5ED5F9001CD182880070E1AE /* JungleSoundEFX.m */,
+				5ED5F9021CD182C70070E1AE /* PowerupSoundEFX.h */,
+				5ED5F9031CD182C70070E1AE /* PowerupSoundEFX.m */,
+				5EFD918E1CD2B37D00A63A24 /* PigSoundEFX.h */,
+				5EFD918F1CD2B37D00A63A24 /* PigSoundEFX.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -283,25 +378,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED5F9041CD182C70070E1AE /* PowerupSoundEFX.m in Sources */,
+				5ED5F8DA1CD17F5E0070E1AE /* ScarySoundEFX.m in Sources */,
+				5ED5F8E31CD180B50070E1AE /* WindSoundEFX.m in Sources */,
 				5ED5F8A21CD1633F0070E1AE /* SoundEFXBase.m in Sources */,
 				5E8BF0981CC195810042A809 /* ViewController.m in Sources */,
 				5E8BF0951CC195810042A809 /* AppDelegate.m in Sources */,
 				5E8BF0B11CC19AA70042A809 /* PCMMixer.m in Sources */,
+				5ED5F8EF1CD181880070E1AE /* TrainSoundEFX.m in Sources */,
+				5ED5F8F81CD181FA0070E1AE /* SuspenseSoundEFX.m in Sources */,
 				5ED5F8A51CD1643C0070E1AE /* CatSoundEFX.m in Sources */,
+				5ED5F8D11CD17E790070E1AE /* LionSoundEFX.m in Sources */,
+				5ED5F9011CD182880070E1AE /* JungleSoundEFX.m in Sources */,
 				5ED5F8B91CD16E170070E1AE /* ChickenSoundEFX.m in Sources */,
 				5ED5F8A81CD1659D0070E1AE /* BatSoundEFX.m in Sources */,
 				5ED5F8CE1CD16FAA0070E1AE /* HorseSoundEFX.m in Sources */,
+				5ED5F8E91CD181070070E1AE /* RainSoundEFX.m in Sources */,
 				5ED5F8C51CD16EFE0070E1AE /* DuckSoundEFX.m in Sources */,
+				5ED5F8D41CD17EAF0070E1AE /* MonkeySoundEFX.m in Sources */,
 				5ED5F8C81CD16F4C0070E1AE /* EagleSoundEFX.m in Sources */,
+				5ED5F8DD1CD17FB40070E1AE /* SeaSoundEFX.m in Sources */,
+				5ED5F8E01CD180000070E1AE /* RiverSoundEFX.m in Sources */,
 				5E8BF0B01CC19AA70042A809 /* BJIConverter.m in Sources */,
 				5ED5F8BF1CD16E8D0070E1AE /* CrowSoundEFX.m in Sources */,
+				5ED5F8E61CD180E50070E1AE /* ThunderSoundEFX.m in Sources */,
 				5ED5F8AE1CD167400070E1AE /* BearSoundEFX.m in Sources */,
+				5ED5F8F51CD181D90070E1AE /* NightSoundEFX.m in Sources */,
 				5E8BF0BB1CC1A5710042A809 /* AudioMixer.m in Sources */,
 				5ED5F8AB1CD1667B0070E1AE /* RoosterSoundEFX.m in Sources */,
 				5ED5F8BC1CD16E500070E1AE /* CowSoundEFX.m in Sources */,
+				5ED5F8FE1CD182520070E1AE /* ExplosionSoundEFX.m in Sources */,
 				5E8BF0921CC195810042A809 /* main.m in Sources */,
 				5ED5F8C21CD16EBE0070E1AE /* DogSoundEFX.m in Sources */,
+				5ED5F8D71CD17F2B0070E1AE /* OwlSoundEFX.m in Sources */,
 				5E03CD571CC593E00038BC2A /* Recorder.m in Sources */,
+				5ED5F8FB1CD1822E0070E1AE /* FireSoundEFX.m in Sources */,
+				5ED5F8EC1CD1812B0070E1AE /* CarSoundEFX.m in Sources */,
+				5ED5F8F21CD181B50070E1AE /* UfoSoundEFX.m in Sources */,
+				5EFD91901CD2B37D00A63A24 /* PigSoundEFX.m in Sources */,
 				5ED5F8CB1CD16F7B0070E1AE /* ElephantSoundEFX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

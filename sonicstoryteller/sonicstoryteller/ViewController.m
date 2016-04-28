@@ -13,6 +13,35 @@
 #import "BatSoundEFX.h"
 #import "RoosterSoundEFX.h"
 #import "BearSoundEFX.h"
+#import "ChickenSoundEFX.h"
+#import "CowSoundEFX.h"
+#import "CrowSoundEFX.h"
+#import "DogSoundEFX.h"
+#import "DuckSoundEFX.h"
+#import "EagleSoundEFX.h"
+#import "ElephantSoundEFX.h"
+#import "HorseSoundEFX.h"
+#import "LionSoundEFX.h"
+#import "MonkeySoundEFX.h"
+#import "OwlSoundEFX.h"
+#import "ScarySoundEFX.h"
+#import "SeaSoundEFX.h"
+#import "BearSoundEFX.h"
+#import "RiverSoundEFX.h"
+#import "WindSoundEFX.h"
+#import "ThunderSoundEFX.h"
+#import "RainSoundEFX.h"
+#import "CarSoundEFX.h"
+#import "TrainSoundEFX.h"
+#import "UfoSoundEFX.h"
+#import "NightSoundEFX.h"
+#import "SuspenseSoundEFX.h"
+#import "FireSoundEFX.h"
+#import "ExplosionSoundEFX.h"
+#import "JungleSoundEFX.h"
+#import "PowerupSoundEFX.h"
+#import "PigSoundEFX.h"
+
 
 @interface ViewController ()
 
@@ -39,6 +68,13 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnCar;
 @property (weak, nonatomic) IBOutlet UIButton *btnTrain;
 @property (weak, nonatomic) IBOutlet UIView *screenView;
+@property (weak, nonatomic) IBOutlet UIButton *btnUfo;
+@property (weak, nonatomic) IBOutlet UIButton *btnNight;
+@property (weak, nonatomic) IBOutlet UIButton *btnSuspense;
+@property (weak, nonatomic) IBOutlet UIButton *btnFire;
+@property (weak, nonatomic) IBOutlet UIButton *btnExplosion;
+@property (weak, nonatomic) IBOutlet UIButton *btnJungle;
+@property (weak, nonatomic) IBOutlet UIButton *btnPowerup;
 
 @property (nonatomic) NSMutableArray *arrSoundEFX;
 
@@ -81,75 +117,103 @@
     }
     else if (btn == self.btnChicken)
     {
-        NSLog(@"chicken");
+        soundEFX = [[ChickenSoundEFX alloc]init];
     }
     else if (btn == self.btnCow)
     {
-        NSLog(@"cow");
+        soundEFX = [[CowSoundEFX alloc]init];
     }
     else if (btn == self.btnCrow)
     {
-        NSLog(@"crow");
+        soundEFX = [[CrowSoundEFX alloc]init];
     }
     else if (btn == self.btnDog)
     {
-        NSLog(@"dog");
+        soundEFX = [[DogSoundEFX alloc]init];
     }
     else if (btn == self.btnDuck)
     {
-        NSLog(@"duck");
+        soundEFX = [[DuckSoundEFX alloc]init];
     }
     else if (btn == self.btnEagle)
     {
-        NSLog(@"eagle");
+        soundEFX = [[EagleSoundEFX alloc]init];
     }
     else if (btn == self.btnElephant)
     {
-        NSLog(@"elephant");
+        soundEFX = [[ElephantSoundEFX alloc]init];
     }
     else if (btn == self.btnHorse)
     {
-        NSLog(@"horse");
+        soundEFX = [[HorseSoundEFX alloc]init];
     }
     else if (btn == self.btnLion)
     {
-        NSLog(@"lion");
+        soundEFX = [[LionSoundEFX alloc]init];
     }
     else if (btn == self.btnMonkey)
     {
-        NSLog(@"monkey");
+        soundEFX = [[MonkeySoundEFX alloc]init];
     }
     else if (btn == self.btnOwl)
     {
-        NSLog(@"owl");
+        soundEFX = [[OwlSoundEFX alloc]init];
     }
     else if (btn == self.btnPig)
     {
-        NSLog(@"pig");
+        soundEFX = [[PigSoundEFX alloc]init];
     }
     else if (btn == self.btnRiver)
     {
-        NSLog(@"river");
+        soundEFX = [[RiverSoundEFX alloc]init];
     }
     else if (btn == self.btnWind)
     {
-        NSLog(@"wind");
+        soundEFX = [[WindSoundEFX alloc]init];
     }
     else if (btn == self.btnThunder)
     {
-        NSLog(@"thunder");
+        soundEFX = [[ThunderSoundEFX alloc]init];
     }
     else if (btn == self.btnRain)
     {
-        NSLog(@"rain");
+        soundEFX = [[RainSoundEFX alloc]init];
     }
     else if (btn == self.btnCar)
     {
-        NSLog(@"car");
+        soundEFX = [[CarSoundEFX alloc]init];
     }
     else if (btn == self.btnTrain)
     {
-        NSLog(@"train");
+        soundEFX = [[TrainSoundEFX alloc]init];
+    }
+    else if (btn == self.btnUfo)
+    {
+        soundEFX = [[UfoSoundEFX alloc]init];
+    }
+    else if (btn == self.btnNight)
+    {
+        soundEFX = [[NightSoundEFX alloc]init];
+    }
+    else if (btn == self.btnSuspense)
+    {
+        soundEFX = [[SuspenseSoundEFX alloc]init];
+    }
+    else if (btn == self.btnFire)
+    {
+        soundEFX = [[FireSoundEFX alloc]init];
+    }
+    else if (btn == self.btnExplosion)
+    {
+        soundEFX = [[ExplosionSoundEFX alloc]init];
+    }
+    else if (btn == self.btnJungle)
+    {
+        soundEFX = [[JungleSoundEFX alloc]init];
+    }
+    else if (btn == self.btnPowerup)
+    {
+        soundEFX = [[PowerupSoundEFX alloc]init];
     }
     
     soundEFX.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 100, 50, 50)];

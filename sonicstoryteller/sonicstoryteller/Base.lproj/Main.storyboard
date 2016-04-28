@@ -146,7 +146,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="5mS-N7-XgQ"/>
                                                     <constraint firstAttribute="width" constant="50" id="BrC-22-dbD"/>
                                                 </constraints>
-                                                <state key="normal" image="bear"/>
+                                                <state key="normal" image="pig"/>
                                                 <connections>
                                                     <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hgd-I2-W7J"/>
                                                 </connections>
@@ -159,7 +159,7 @@
                                                 </constraints>
                                                 <state key="normal" image="dog"/>
                                                 <connections>
-                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nj6-x5-kxu"/>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tE6-b9-IGt"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky3-Y9-pMn">
@@ -248,17 +248,6 @@
                                                 <state key="normal" image="scary"/>
                                                 <connections>
                                                     <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDf-2N-bX7"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nje-zM-eN1">
-                                                <rect key="frame" x="472" y="66" width="50" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="D1O-fP-Ssr"/>
-                                                    <constraint firstAttribute="width" constant="50" id="vVn-ZN-Vwr"/>
-                                                </constraints>
-                                                <state key="normal" image="sea"/>
-                                                <connections>
-                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cGG-KP-Sog"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCK-BN-OcV">
@@ -498,6 +487,17 @@
                                                 </constraints>
                                                 <state key="normal" image="bear"/>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nje-zM-eN1">
+                                                <rect key="frame" x="472" y="66" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="D1O-fP-Ssr"/>
+                                                    <constraint firstAttribute="width" constant="50" id="vVn-ZN-Vwr"/>
+                                                </constraints>
+                                                <state key="normal" image="sea"/>
+                                                <connections>
+                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cGG-KP-Sog"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="KPJ-Oq-KHt" firstAttribute="top" secondItem="elu-0Z-cGZ" secondAttribute="top" id="00J-5K-xIC"/>
@@ -621,16 +621,23 @@
                         <outlet property="btnDuck" destination="Ky3-Y9-pMn" id="mho-xm-MWB"/>
                         <outlet property="btnEagle" destination="uBC-23-HZ0" id="FI3-Sm-Fia"/>
                         <outlet property="btnElephant" destination="9FB-IS-zzM" id="niF-8g-CKc"/>
+                        <outlet property="btnExplosion" destination="6tE-qN-snl" id="pXO-to-MYS"/>
+                        <outlet property="btnFire" destination="z1h-gc-kYL" id="zLO-hC-ht1"/>
                         <outlet property="btnHorse" destination="4Wc-Fx-Vs5" id="LlQ-yY-QgP"/>
+                        <outlet property="btnJungle" destination="qJK-lY-dPc" id="ARR-Ng-mvN"/>
                         <outlet property="btnLion" destination="kcS-Fe-EoJ" id="6eg-7w-Wdp"/>
                         <outlet property="btnMonkey" destination="Cd7-Pi-hxO" id="AOO-xk-GAc"/>
+                        <outlet property="btnNight" destination="wPs-Wp-ADW" id="vbN-2s-nxq"/>
                         <outlet property="btnOwl" destination="8Sr-bg-XKJ" id="MJK-XT-h0x"/>
                         <outlet property="btnPig" destination="LgL-IP-iYK" id="eXi-HI-DbD"/>
+                        <outlet property="btnPowerup" destination="zUW-sx-Mw9" id="Sob-6a-Swn"/>
                         <outlet property="btnRain" destination="TvI-lz-vBZ" id="4Ob-xU-slv"/>
                         <outlet property="btnRiver" destination="UCK-BN-OcV" id="YxT-oU-smx"/>
                         <outlet property="btnRooster" destination="KPJ-Oq-KHt" id="djj-gL-pNK"/>
+                        <outlet property="btnSuspense" destination="8WQ-tY-1Yd" id="UoU-pl-IgR"/>
                         <outlet property="btnThunder" destination="FLG-pQ-Kqq" id="CSM-7R-hfo"/>
                         <outlet property="btnTrain" destination="rqo-ol-1uW" id="ujx-6b-Nov"/>
+                        <outlet property="btnUfo" destination="riO-3f-zHM" id="hfy-Ul-eqX"/>
                         <outlet property="btnWind" destination="pRh-E3-wf4" id="jwK-kD-y8I"/>
                         <outlet property="screenView" destination="1b5-g8-dUn" id="5Jg-YL-LlW"/>
                     </connections>
@@ -660,6 +667,7 @@
         <image name="monkey" width="120" height="120"/>
         <image name="night" width="120" height="120"/>
         <image name="owl" width="120" height="120"/>
+        <image name="pig" width="120" height="120"/>
         <image name="play" width="120" height="120"/>
         <image name="powerup" width="120" height="120"/>
         <image name="rain" width="120" height="120"/>
