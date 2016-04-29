@@ -7,6 +7,13 @@
 //
 
 #import "SoundEFXBase.h"
+#import <AVFoundation/AVFoundation.h>
+
+@interface SoundEFXBase ()
+{
+  AVAudioPlayer *backgroundMusicPlayer;
+}
+@end
 
 @implementation SoundEFXBase
 
@@ -38,5 +45,24 @@
 }
 
 
+- (void) playSound
+{
+    NSString *songString = [self getSoundEFXName];
+    NSArray *songStringSplitted = [songString componentsSeparatedByString:@"."];
+    NSString *song = [[NSBundle mainBundle]
+                            pathForResource:[songStringSplitted objectAtIndex:0] ofType:[songStringSplitted objectAtIndex:1]];
+    NSURL *url = [NSURL fileURLWithPath:song];
+    
+    backgroundMusicPlayer = [[AVAudioPlayer alloc]
+                                  initWithContentsOfURL:url error:nil];
+    backgroundMusicPlayer.volume = 0.7;
+    [backgroundMusicPlayer prepareToPlay];
+    [backgroundMusicPlayer play];
+}
+
+- (void) stopSound
+{
+    [backgroundMusicPlayer stop];
+}
 
 @end

@@ -71,12 +71,12 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnExplosion;
 @property (weak, nonatomic) IBOutlet UIButton *btnPowerup;
 @property (weak, nonatomic) IBOutlet UIButton *btnSea;
-@property (weak, nonatomic) IBOutlet UIButton *btnRiver;
 @property (weak, nonatomic) IBOutlet UIButton *btnRain;
 @property (weak, nonatomic) IBOutlet UIButton *btnThunder;
 @property (weak, nonatomic) IBOutlet UIButton *btnWind;
 @property (weak, nonatomic) IBOutlet UIButton *btnScary;
 @property (weak, nonatomic) IBOutlet UIButton *btnSuspense;
+@property (weak, nonatomic) IBOutlet UIButton *btnNight;
 
 @property (nonatomic) NSMutableDictionary<NSString*, SoundEFXBase*> *dicSoundEFX;
 
@@ -222,10 +222,10 @@
         soundEFXBase = [SeaSoundEFX new];
         soundStringKey = @"sea";
     }
-    else if (btn == self.btnRiver)
+    else if (btn == self.btnNight)
     {
-        soundEFXBase = [RiverSoundEFX new];
-        soundStringKey = @"river";
+        soundEFXBase = [NightSoundEFX new];
+        soundStringKey = @"night";
     }
     else if (btn == self.btnRain)
     {
@@ -254,7 +254,26 @@
     }
     
     [self.dicSoundEFX setObject:soundEFXBase forKey:soundStringKey];
+    [soundEFXBase playSound];
 }
 
+- (IBAction)stopTapped:(UIButton *)sender
+{
+    for (NSString *key in self.dicSoundEFX)
+    {
+        SoundEFXBase *soundEFXBase = [self.dicSoundEFX objectForKey:key];
+        [soundEFXBase stopSound];
+    }
+    
+    [[Recorder sharedInstance] stopRecording];
+}
 
+- (IBAction)recordTapped:(UIButton *)sender
+{
+    [[Recorder sharedInstance]record];
+}
+- (IBAction)playtapped:(UIButton *)sender
+{
+    [[Recorder sharedInstance]playLastRecorded];
+}
 @end

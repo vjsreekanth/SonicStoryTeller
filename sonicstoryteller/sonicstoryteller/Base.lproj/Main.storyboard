@@ -28,6 +28,9 @@
                                             <constraint firstAttribute="height" constant="50" id="q84-fS-8Sh"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="play"/>
+                                        <connections>
+                                            <action selector="playtapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z6X-fp-r8n"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1r-tF-BLg">
                                         <rect key="frame" x="70" y="0.0" width="50" height="50"/>
@@ -36,6 +39,9 @@
                                             <constraint firstAttribute="width" constant="50" id="raf-3A-CEn"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="record"/>
+                                        <connections>
+                                            <action selector="recordTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7H-1N-Tbh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSI-vZ-zz8">
                                         <rect key="frame" x="140" y="0.0" width="50" height="50"/>
@@ -44,6 +50,9 @@
                                             <constraint firstAttribute="width" constant="50" id="n78-bM-6EA"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="stop"/>
+                                        <connections>
+                                            <action selector="stopTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQt-I8-hwG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -346,9 +355,9 @@
                                                                     <constraint firstAttribute="height" constant="50" id="ea6-m8-SCy"/>
                                                                     <constraint firstAttribute="width" constant="50" id="xUG-Ln-NA2"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button" image="river"/>
+                                                                <state key="normal" title="Button" image="night"/>
                                                                 <connections>
-                                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="THv-Mh-mru"/>
+                                                                    <action selector="btnSoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hwT-aS-Dot"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -461,11 +470,11 @@
                         <outlet property="btnHorse" destination="Alr-eN-hhL" id="cBl-Sb-cpF"/>
                         <outlet property="btnLion" destination="vOp-eY-rk4" id="Bll-6u-hs4"/>
                         <outlet property="btnMonkey" destination="3HJ-55-Dop" id="ENA-mE-TK2"/>
+                        <outlet property="btnNight" destination="VS3-Lk-nPP" id="2HC-cH-U6v"/>
                         <outlet property="btnOwl" destination="tMR-PM-NHC" id="jmO-zW-nM9"/>
                         <outlet property="btnPig" destination="L5h-zj-Pbq" id="HMj-uh-kaf"/>
                         <outlet property="btnPowerup" destination="Zfm-6m-25b" id="Sy7-kF-zSt"/>
                         <outlet property="btnRain" destination="T7a-bt-xYr" id="iFJ-QZ-msb"/>
-                        <outlet property="btnRiver" destination="VS3-Lk-nPP" id="ppO-5o-Jsd"/>
                         <outlet property="btnRooster" destination="XP5-TM-95V" id="n86-eJ-dJD"/>
                         <outlet property="btnScary" destination="p9Y-8p-0Dz" id="jgt-MT-NAB"/>
                         <outlet property="btnSea" destination="mb4-Al-hfS" id="3Pi-LX-E13"/>
@@ -499,13 +508,13 @@
         <image name="horse" width="120" height="120"/>
         <image name="lion" width="120" height="120"/>
         <image name="monkey" width="120" height="120"/>
+        <image name="night" width="120" height="120"/>
         <image name="owl" width="120" height="120"/>
         <image name="pig" width="120" height="120"/>
         <image name="play" width="120" height="120"/>
         <image name="powerup" width="120" height="120"/>
         <image name="rain" width="120" height="120"/>
         <image name="record" width="120" height="120"/>
-        <image name="river" width="120" height="120"/>
         <image name="rooster" width="120" height="120"/>
         <image name="scary" width="120" height="120"/>
         <image name="sea" width="120" height="120"/>

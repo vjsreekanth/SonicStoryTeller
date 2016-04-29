@@ -15,4 +15,6 @@
 - (void) handlePan:(UIPanGestureRecognizer *)panGesture;
 - (NSString *) getSoundEFXName;
 
+- (void) playSound;
+- (void) stopSound;
 @end

@@ -13,6 +13,7 @@
 @interface Recorder()
 {
     AVAudioRecorder *recorder;
+    AVAudioPlayer *player;
 }
 
 @end
@@ -96,17 +97,23 @@
 
 -(void)playLastRecorded
 {
-    if (!recorder.recording)
+    if (recorder.recording)
     {
-        AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-        [audioSession overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:nil];
-        [[AudioMixer sharedInstance] mixAndPlay];
+        [recorder stop];
     }
+    
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:recorder.url error:nil];
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    [audioSession overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:nil];
+    player.volume = 1.0;
+    [player play];
+    //[[AudioMixer sharedInstance] mixAndPlay];
 }
 
 -(void)stopRecording
 {
     [recorder stop];
+    [player stop];
     
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
     [audioSession setActive:NO error:nil];
